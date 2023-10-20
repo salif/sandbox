@@ -3,4 +3,5 @@ title: Music Page
 template: music-page.html
 ---
 
-Go back [Home](/).
+Visit the [Test](/test) page.  
+Go back [Home](/index.html).

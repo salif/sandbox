@@ -16,43 +16,37 @@ const songs = [
   {
     path: "https://github.com/semanticdata/public-test/raw/main/MP3/Batida%20de%20Zapote/2_Ph_t_H_n_-_KAIZ_Remix.mp3",
     displayName: "2 Phút Hơn - KAIZ Remix",
-    cover:
-      "assets/1.jpg",
+    cover: "assets/1.jpg",
     artist: "Phao, KAIZ",
   },
   {
     path: "https://github.com/semanticdata/public-test/raw/main/MP3/Batida%20de%20Zapote/Agony.mp3",
     displayName: "Agony",
-    cover:
-      "assets/2.jpg",
+    cover: "assets/2.jpg",
     artist: "Azedia",
   },
   {
     path: "https://github.com/semanticdata/public-test/raw/main/MP3/Batida%20de%20Zapote/Autre_temps.mp3",
     displayName: "Autre temps",
-    cover:
-      "assets/3.jpg",
+    cover: "assets/3.jpg",
     artist: "Alcest",
   },
   {
     path: "https://github.com/semanticdata/public-test/raw/main/MP4/Casiio%20x%20Sleepermane%20x%20%C3%98DYSSEE%20%E2%80%93%20Suntai.mp4",
     displayName: "Suntai",
-    cover:
-      "assets/1.jpg",
+    cover: "assets/1.jpg",
     artist: "Casiio x Sleepermane",
   },
   {
     path: "https://github.com/semanticdata/public-test/raw/main/MP4/Casiio%20x%20Sleepermane%20%E2%80%93%20Afterglow.mp4",
     displayName: "Afterglow",
-    cover:
-      "assets/2.jpg",
+    cover: "assets/2.jpg",
     artist: "Casiio x Sleepermane",
   },
   {
     path: "https://github.com/semanticdata/public-test/raw/main/MP4/Casiio%20x%20Sleepermane%20%E2%80%93%20Atoms.mp4",
     displayName: "Atoms",
-    cover:
-      "assets/3.jpg",
+    cover: "assets/3.jpg",
     artist: "Casiio x Sleepermane",
   },
 ];

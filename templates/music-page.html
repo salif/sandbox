@@ -2,8 +2,10 @@
 
 {% block content %}
 
+<h1 style="color: #fff;">{{ page.title }}</h1>
+
 {{ page.content | safe }}
 
-{{ macros::musicPlayer() }}
+{% include "partials/music-player.html" %}
 
 {% endblock content %}
