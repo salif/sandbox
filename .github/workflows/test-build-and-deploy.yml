@@ -37,7 +37,7 @@ jobs:
       - name: Upload artifact
         uses: semanticdata/upload-pages-artifact@v0.1.0
         with:
-          path: ./public
+          path: ./mabuya/public
 
   deploy:
     runs-on: ubuntu-latest
