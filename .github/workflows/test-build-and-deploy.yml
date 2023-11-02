@@ -1,4 +1,4 @@
-name: Test - Zola - Build and Deploy to GH Pages
+name: Zola - Build from Docs (folder) and Deploy to GH Pages
 
 on:
   # push:
@@ -30,14 +30,13 @@ jobs:
       - name: Install Zola
         uses: taiki-e/install-action@zola
       - name: Build Zola
-        # run: zola --root mabuya --config mabuya/config.toml build # --output-dir mabuya/public/ # --force
-        run: zola --root mabuya build # --output-dir mabuya/public/ # --force
+        run: zola --root docs build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Upload artifact
         uses: semanticdata/upload-pages-artifact@v0.1.0
         with:
-          path: ./mabuya/public
+          path: ./docs/public
 
   deploy:
     runs-on: ubuntu-latest
