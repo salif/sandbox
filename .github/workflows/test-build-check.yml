@@ -1,4 +1,4 @@
-name: Test – Zola only Build
+name: Zola only Build
 
 on:
   # push:
@@ -30,7 +30,7 @@ jobs:
       - name: Install Zola
         uses: taiki-e/install-action@zola
       - name: Build Zola
-        run: zola check
+        run: zola --root mabuya --config mabuya/config.toml check --output-dir mabuya/public/ # --force
         env:
           BUILD_ONLY: true
           BUILD_FLAGS: --drafts
