@@ -29,6 +29,7 @@ body {
   // grid-template-rows: auto;
   // grid-template-columns: vars.$page-width vars.$sidebar-width;
   margin: 0 auto;
+  max-width: 800px;
 }
 
 main,
