@@ -1,9 +1,9 @@
-@use "variables";
+@use "vars";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 * {
+  // font-family: vars.$system-font;
   font-family: "Poppins", sans-serif;
-  // font-family: $system-font;
   line-height: 1.5;
 }
 
@@ -15,26 +15,17 @@ html {
 }
 
 body {
-  @include variables.box-sizing;
-  background: variables.$background-color;
+  @include vars.box-sizing;
+  background: vars.$background-color;
   transition: all 0.3s ease;
-}
 
-.container {
   display: grid;
   margin: 0 auto;
-  max-width: variables.$page-width;
-  grid-template-columns: 1fr minmax(150px, 20%);
-}
-
-.container-alt {
-  display: grid;
-  margin: 0 auto;
-  max-width: variables.$page-width;
+  max-width: vars.$page-width;
   grid-template-areas:
-    "header header"
+    // "header header"
     "main aside"
-    "site-footer site-footer";
+    "footer footer";
 }
 
 main,
@@ -43,20 +34,18 @@ aside {
 }
 
 main {
-  background: inherit;
-  background: #d4f2c4;
   grid-area: main;
+  background: #d4f2c4;
 }
 
 aside {
   // max-width: $sidebar-width;
-  background: inherit;
-  background: #81cfd9;
   grid-area: aside;
+  background: #81cfd9;
 }
 
 footer {
-  grid-area: site-footer;
+  grid-area: footer;
   text-align: center;
-  margin-top: auto;
+  // margin-top: auto;
 }

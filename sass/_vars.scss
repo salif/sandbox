@@ -1,4 +1,4 @@
-// CSS root variables
+// CSS root Variables
 :root {
   --system-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
     Helvetica, Arial, sans-serif;
@@ -11,7 +11,7 @@
   --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-// SCSS variables
+// SCSS Variables
 $page-width: 1130px; //750px + 380px from Forgetful Notes
 $system-font: var(--system-font);
 $background-color: var(--color-background);

@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width">
   <meta name="description" itemprop="about" content="{{config.description}}">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="{{ get_url(path="main.css") | safe }}">
-  <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+  <title>{% block title %}{{ config.title }}
+    {% endblock title %}</title>
+  {% include "partials/styles.html" %}
 </head>
 
 <body>
 
-  <article class="container">
     <main>
       {% block content %}{% endblock content %}
     </main>
@@ -25,11 +24,8 @@
     <footer>
       <p>This is the footer.</p>
     </footer>
-    
-  </article>
 
-  <script src="{{ get_url(path="card.js") | safe }}"></script>
-  <script src="{{ get_url(path="music.js") | safe }}"></script>
+{% include "partials/scripts.html" %}
 </body>
 
 </html>
