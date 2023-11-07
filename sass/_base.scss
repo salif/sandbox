@@ -26,10 +26,9 @@ body {
   // "header header"
   "main aside"
   "footer footer";
-  grid-template-rows: auto;
-  grid-template-columns: vars.$page-width vars.$sidebar-width;
+  // grid-template-rows: auto;
+  // grid-template-columns: vars.$page-width vars.$sidebar-width;
   margin: 0 auto;
-  width: vars.$page-width;
 }
 
 main,
@@ -38,12 +37,13 @@ aside {
 }
 
 main {
+  max-width: vars.$page-width;
   grid-area: main;
   background: #d4f2c4;
 }
 
 aside {
-  // max-width: vars.$sidebar-width;
+  max-width: vars.$sidebar-width;
   grid-area: aside;
   background: #81cfd9;
 }
