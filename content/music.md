@@ -4,4 +4,4 @@ template: music.html
 ---
 
 Visit the [Test](/test) page.  
-Go back [Home](/index.html).
+Go back [Home](/).

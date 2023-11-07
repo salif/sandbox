@@ -4,11 +4,6 @@ title: Test Page
 description: "This is intended as a quick reference and showcase of Markdown's synthax."
 ---
 
-> Check out the [Music](/music) page.
-> Go back [Home](/).
-
-This is intended as a quick reference and showcase of Markdown's synthax.
-
 # Heading Level 1
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.

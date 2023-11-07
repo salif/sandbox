@@ -1,16 +1,48 @@
+@use "variables";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 * {
-  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  // font-family: $system-font;
   line-height: 1.5;
 }
 
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  overflow-x: hidden;
+}
+
 body {
-  background: var(--color-background);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include variables.box-sizing;
+  background: variables.$background-color;
   transition: all 0.3s ease;
+}
+
+footer {
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr minmax(150px, 20%);
+  margin: 0 auto;
+  max-width: variables.$page-width;
+}
+
+main,
+aside {
+  padding: 1rem;
+}
+
+main {
+  background: inherit;
+  background: #d4f2c4;
+}
+
+aside {
+  // max-width: $sidebar-width;
+  background: inherit;
+  background: #81cfd9;
 }
