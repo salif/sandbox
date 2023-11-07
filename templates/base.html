@@ -13,7 +13,7 @@
 
 <body>
 
-  <section class="container">
+  <article class="container">
     <main>
       {% block content %}{% endblock content %}
     </main>
@@ -21,11 +21,12 @@
     <aside>
       {% include "partials/navigation.html" %}
     </aside>
-  </section>
-
-  <footer>
-    <p>This is the footer.</p>
-  </footer>
+    
+    <footer>
+      <p>This is the footer.</p>
+    </footer>
+    
+  </article>
 
   <script src="{{ get_url(path="card.js") | safe }}"></script>
   <script src="{{ get_url(path="music.js") | safe }}"></script>
