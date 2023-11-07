@@ -1,7 +1,19 @@
-@import "variables";
-@import "base";
-@import "layout";
-@import "music";
-@import "typewriter";
-@import "card";
-@import "custom";
+:root {
+  --default-color: #555;
+  --color-gradient: linear-gradient(90deg, #eee, #f9f9f9, #eee);
+  --color-background: #d9d9d9;
+  --color-card-background: #fff;
+  --color-header: #000;
+  --color-info: #363949;
+  --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+$default-color: var(--default-color);
+
+@import
+"base",
+"music",
+"typewriter",
+"card",
+"custom"
+;
