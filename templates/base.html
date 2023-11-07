@@ -14,11 +14,12 @@
 <body>
 
     <main>
+      {% block pagetitle %}<h1>Forgotten Title</h1>{% endblock pagetitle %}
       {% block content %}{% endblock content %}
     </main>
 
     <aside>
-      {% include "partials/navigation.html" %}
+      {% include "partials/sidebar.html" %}
     </aside>
     
     <footer>

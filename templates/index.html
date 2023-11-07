@@ -1,8 +1,12 @@
 {% extends "base.html" %}
 
-{% block content %}
+{% block pagetitle %}
 
 <h1>{{ section.title }}</h1>
+
+{% endblock pagetitle %}
+
+{% block content %}
 
 {{ section.content | safe }}
 

@@ -2,21 +2,23 @@
 :root {
   --system-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
     Helvetica, Arial, sans-serif;
-  --default-color: #555;
+  --default-color: #000; // #555
   --color-background: #d9d9d9;
   --color-gradient: linear-gradient(90deg, #eee, #f9f9f9, #eee);
   --color-card-background: #fff;
   --color-header: #000;
   --color-info: #363949;
   --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --page-width: 1130px;
+  --sidebar-width: 300px;
 }
 
 // SCSS Variables
-$page-width: 1130px; //750px + 380px from Forgetful Notes
 $system-font: var(--system-font);
-$background-color: var(--color-background);
 $font-color: var(--default-color);
-$sidebar-width: 300px;
+$background-color: var(--color-background);
+$page-width: var(--page-width);
+$sidebar-width: var(--sidebar-width);
 
 //Mixins
 @mixin min-screen($min-width: $body-width) {
@@ -35,4 +37,10 @@ $sidebar-width: 300px;
   -webkit-box-sizing: $type;
   -moz-box-sizing: $type;
   box-sizing: $type;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  transition: $args;
 }
