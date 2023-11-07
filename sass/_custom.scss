@@ -1,7 +1,20 @@
 // Place custom CSS here
 
-// .container {
-//   margin: 0 auto;
-//   max-width: 800px;
-//   width: 80%;
-// }
+.container {
+  display: grid;
+  grid-template-columns: 1fr minmax(150px, 20%);
+  height: 100px;
+}
+
+main, aside {
+  padding: 12px;
+  text-align: center;
+}
+
+main {
+  background: #d4f2c4;
+}
+
+aside {
+  background: #81cfd9;
+}

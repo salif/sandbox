@@ -12,8 +12,16 @@
 </head>
 
 <body>
-  
-  {% block content %}{% endblock content %}
+  <div class="container">
+    <main>
+      {% block content %}{% endblock content %}
+      <p>This element is 1fr large.</p>
+    </main>
+    <aside>
+      {% include "partials/navigation.html" %}
+      <p>Min: 150px / Max: 20%</p>
+    </aside>
+  </div>
 
   <script src="{{ get_url(path="card.js") | safe }}"></script>
   <script src="{{ get_url(path="music.js") | safe }}"></script>

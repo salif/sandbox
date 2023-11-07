@@ -1,6 +1,6 @@
 ---
 title: Music Page
-template: music-page.html
+template: music.html
 ---
 
 Visit the [Test](/test) page.  
