@@ -29,7 +29,7 @@ body {
   // grid-template-rows: auto;
   // grid-template-columns: vars.$page-width vars.$sidebar-width;
   margin: 0 auto;
-  max-width: calc(vars.$page-width + vars.$page-width);
+  width: calc(vars.$page-width + vars.$page-width);
 }
 
 main,
@@ -38,19 +38,19 @@ aside {
 }
 
 main {
-  max-width: vars.$page-width;
+  width: vars.$page-width;
   grid-area: main;
   background: #d4f2c4;
 }
 
 aside {
-  max-width: vars.$sidebar-width;
+  width: vars.$sidebar-width;
   grid-area: aside;
   background: #81cfd9;
 }
 
 footer {
-  max-width: calc(vars.$page-width + vars.$page-width);
+  width: calc(vars.$page-width + vars.$page-width);
   grid-area: footer;
   text-align: center;
   margin-top: auto;
