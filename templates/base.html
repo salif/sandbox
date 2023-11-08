@@ -14,10 +14,12 @@
 <body>
 
     <main>
-      {% block pagetitle %}<h1>Forgotten Title</h1>
+      {% block pagetitle %}
+      <h1>Forgotten Title</h1>
       {% endblock pagetitle %}
 
-      {% block content %}{% endblock content %}
+      {% block content %}
+      {% endblock content %}
     </main>
 
     <aside>
@@ -25,10 +27,11 @@
     </aside>
     
     <footer>
-      <p>This is the footer.</p>
+      {% include "partials/footer.html" %}
     </footer>
 
 {% include "partials/scripts.html" %}
+
 </body>
 
 </html>

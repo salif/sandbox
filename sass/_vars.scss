@@ -19,6 +19,7 @@ $font-color: var(--default-color);
 $background-color: var(--color-background);
 $page-width: var(--page-width);
 $sidebar-width: var(--sidebar-width);
+$mobile-breakpoint: 600px;
 
 //Mixins
 @mixin min-screen($min-width: $body-width) {

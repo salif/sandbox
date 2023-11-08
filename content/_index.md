@@ -1,6 +1,6 @@
 ---
-title: Home Sweet Home
+title: .
 ---
 
-Visit the [Test](test/) page.  
-Check out the [Music](music/) page.
+[Test](test/)  
+[Music](music/)
