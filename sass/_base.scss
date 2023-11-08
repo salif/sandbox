@@ -50,6 +50,7 @@ aside {
 }
 
 footer {
+  max-width: calc(vars.$page-width + vars.$page-width);
   grid-area: footer;
   text-align: center;
   margin-top: auto;
