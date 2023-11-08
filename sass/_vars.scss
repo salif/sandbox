@@ -8,9 +8,11 @@
   --color-card-background: #fff;
   --color-header: #000;
   --color-info: #363949;
+  --color-border: #807b7b;
   --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   --page-width: 750px;
   --sidebar-width: 250px;
+  --mobile-breakpoint: 600px;
 }
 
 // SCSS Variables
@@ -19,7 +21,8 @@ $font-color: var(--default-color);
 $background-color: var(--color-background);
 $page-width: var(--page-width);
 $sidebar-width: var(--sidebar-width);
-$mobile-breakpoint: 600px;
+$mobile-breakpoint: var(--mobile-breakpoint);
+$border-color: var(--color-border);
 
 //Mixins
 @mixin min-screen($min-width: $body-width) {

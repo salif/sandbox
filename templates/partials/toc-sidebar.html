@@ -1,0 +1,35 @@
+{% if page.toc %}
+{# <div class="link-wrapper"> #}
+
+  <h4 class="sidebar-title">Table of Contents:</h4>
+
+  {# <ul class="content"> #}
+    <ul class="sublist">
+
+      {% for h1 in page.toc %}
+      <li>
+        <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+        {% if h1.children %}
+        <ul class="sublist">
+          {% for h2 in h1.children %}
+          <li>
+            <a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+
+            <ul class="sublist">
+              {% for h3 in h2.children %}
+              <li>
+                <a href="{{ h3.permalink | safe }}">{{ h3.title }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+
+{# </div> #}
+{% endif %}

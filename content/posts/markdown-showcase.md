@@ -1,13 +1,23 @@
 ---
-title: Test Page
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit."
+title: Markdown Showcase
+description: "This is intended as a quick reference and showcase of Markdown's synthax."
+date: 2022-12-31
+# taxonomies:
+#   tags: ["placeholder", "markdown", "reference"]
+#   categories: ["Placeholder"]
+# extra:
+#   author: Miguel Pimentel
 ---
+
+This is intended as a quick reference and showcase of Markdown's synthax.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.
+
+<!-- more -->
 
 # Heading Level 1
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.
-
-Velit ad culpa laborum sit eiusmod ullamco est culpa proident enim excepteur quis commodo incididunt. Qui quis aliquip enim sit elit laborum dolore qui Lorem anim ipsum anim pariatur. Veniam adipisicing nisi eiusmod cillum. Esse pariatur quis ut ex nostrud voluptate veniam culpa esse veniam.
 
 ## Heading Level 2
 
@@ -43,7 +53,7 @@ You can [link](https://example.dom/) to external pages. and other internal [[Mar
 
 ### Simple Example
 
-> This is a blockquote  
+> This is a blockquote
 > with several lines
 
 ### Formatted Example
@@ -79,15 +89,13 @@ In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla e
 In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.
 
 * Item
-
  1. First Sub-item
  2. Second Sub-item
 
- 1. Numbered Item
- 2. Another one
+1. Numbered Item
+2. Another one
  1. Sub-item
-
-* Unordered again
+ * Unordered again
 
 ## Code
 
@@ -99,10 +107,10 @@ Let us use some `inline code` and check out how it `looks`. Here's some `more`.
 
 ```html
 <html>
-  <head>
-  <section style="background-color: #333;">
+ <head>
+  <div style="background-color: #333;">
    <a href="https://example.com/">Example</a>
-  </section>
+  </div>
  </head>
 </html>
 ```
@@ -161,16 +169,26 @@ lorem ipsum dolor | lorem ipsum dolor sit | lorem ipsum dolor sit amet | lorem i
 
 ---
 
-## Tasks
+## Tasks and Custom Todos
 
 * [ ] Pending Task
 * [x] Completed Task
+
+* [-] Won't Do Task
+* [/] In Progress Task
+* [*] You are a star.
+* [!] Exclamation Mark!
+* [?] Question Mark?
+* [<] Scheduled Task
+* [>] Forwarded Task
 
 ## Images
 
 ![image](https://just-the-docs.com/assets/images/small-image.jpg)
 
 ## Other Elements — Abbr, Sub, Sup, Kbd, Mark
+
+In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.
 
 ### Description
 
@@ -191,3 +209,53 @@ Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the ses
 ### Highlighting
 
 Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+
+## Callouts
+
+> [!EXAMPLE] Examples
+>
+> Aliases: example
+
+> [!note] Notes
+>
+> Aliases: note
+
+> [!abstract] Summaries
+>
+> Aliases: abstract, summary, tldr
+
+> [!info] Info
+>
+> Aliases: info, todo
+
+> [!tip] Hint
+>
+> Aliases: tip, hint, important
+
+> [!success] Success
+>
+> Aliases: success, check, done
+
+> [!question] Question
+>
+> Aliases: question, help, faq
+
+> [!warning] Warning
+>
+> Aliases: warning, caution, attention
+
+> [!failure] Failure
+>
+> Aliases: failure, fail, missing
+
+> [!danger] Error
+>
+> Aliases: danger, error
+
+> [!bug] Bug
+>
+> Aliases: bug
+
+> [!quote] Quote
+>
+> Aliases: quote, cite

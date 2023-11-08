@@ -1,0 +1,16 @@
+<section class="sidebar">
+<a href="{{ config.base_url | safe }}">
+  <h2>
+  {{ config.title }}
+</h2>
+</a>
+  <h3 class="sidebar-title transform-text">
+    {{ page.title }}
+  </h3>
+  <p>
+    {{ page.description }}
+  </p>
+
+{% include "partials/toc-sidebar.html" %}
+
+</section>
