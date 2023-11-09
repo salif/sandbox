@@ -39,7 +39,7 @@ body {
     display: grid;
     grid-template-areas:
       "main"
-      "aside"
+      "asie"
       "footer";
   }
 }
@@ -61,8 +61,8 @@ body.sections {
   @media (max-width: 600px) {
     display: grid;
     grid-template-areas:
-      "main"
       "aside"
+      "main"
       "footer";
   }
 }
