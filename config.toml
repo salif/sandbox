@@ -7,7 +7,7 @@ minify_html = false
 build_search_index = false
 taxonomies = [
   { name = "categories", feed = true },
-  { name = "tags", feed = true }
+  { name = "tags", feed = true },
 ]
 
 [markdown]
@@ -15,3 +15,10 @@ highlight_code = false
 highlight_theme = "ayu-light"
 
 [extra]
+sidebar = [
+  { name = "Links", urls = [
+    { name = "Blog", url = "https://miguelpimentel.do" },
+    { name = "Digital Garden", url = "https://forgetfulnotes.com" },
+    { name = "Source", url = "https://github.com/semanticdata/zola-dinkleberg" },
+  ] },
+]

@@ -12,19 +12,26 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  margin: 0 0 1rem;
+  max-width: 100%;
+}
+
 html {
   color: vars.$font-color;
   background-color: vars.$background-color;
   scroll-behavior: smooth;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
-  overflow-x: hidden;
+  overflow-y: scroll;
+  // overflow-x: hidden;
 }
 
 body {
   @include vars.box-sizing();
+  @include vars.transition(all 0.3s ease);
   background: vars.$background-color;
-  transition: all 0.3s ease;
   display: grid;
   grid-template-rows: 1fr auto;
   grid-template-columns: 1fr auto;
@@ -35,18 +42,13 @@ body {
   min-height: 100vh;
   margin: 0 auto;
 
-  @media (max-width: 750px) {
+  @media (max-width: vars.$page-width) {
     display: grid;
     grid-template-areas:
       "aside"
       "main"
       "footer";
   }
-}
-
-main,
-aside {
-  padding: 1rem;
 }
 
 main {
@@ -72,83 +74,4 @@ footer ul {
   list-style-type: none;
   display: inline-flex;
   gap: 1rem;
-}
-
-aside ul {
-  list-style-type: none;
-  // padding: 0;
-  // margin: 0;
-
-  a {
-    text-decoration: underline;
-  }
-}
-
-/* Code formatting */
-pre,
-code {
-  border: 1px solid vars.$border-color;
-  background-color: vars.$background-color;
-  border-radius: 4px;
-}
-
-code {
-  // padding:  3px;
-  line-height: 1.5;
-}
-
-pre {
-  padding: 0.5rem 1rem;
-  overflow-x: auto;
-
-  > code {
-    border: 0;
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
-
-img {
-  display: block;
-  margin: 0 0 1rem;
-  max-width: 100%;
-}
-
-table {
-  margin: 0 auto;
-  color: vars.$font-color;
-  border: 1px solid vars.$border-color;
-  font-size: 12pt;
-  border-collapse: collapse;
-}
-
-table thead th,
-table tfoot th {
-  color: vars.$font-color;
-  background: rgba(0, 0, 0, 0.2);
-}
-
-table caption {
-  padding: 0.5em;
-}
-
-table th,
-table td {
-  padding: 0.5em;
-  border: 1px solid vars.$border-color;
-}
-
-main {
-  padding-top: 1rem;
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
 }

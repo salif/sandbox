@@ -1,0 +1,24 @@
+@use "vars";
+
+/* Code formatting */
+pre,
+code {
+  border: 1px solid vars.$border-color;
+  background-color: vars.$background-color;
+  border-radius: 4px;
+}
+
+code {
+  line-height: 1.5;
+}
+
+pre {
+  padding: 0.5rem 1rem;
+  // overflow-x: auto;
+
+  > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

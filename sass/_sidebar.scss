@@ -1,0 +1,44 @@
+@use "vars";
+
+// Sidebar
+@media (min-width: vars.$mobile-breakpoint) {
+  .sidebar {
+    width: calc(vars.$sidebar-width - 1rem);
+    position: fixed;
+    -webkit-font-smoothing: subpixel-antialiased;
+    // padding: 1rem 0;
+    // overflow-y: hidden;
+    // overflow-x: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+
+  @-moz-document url-prefix() {
+    .sidebar {
+      scrollbar-width: none;
+    }
+  }
+
+  .sidebar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.sidebar p {
+  font-size: 14px; //16px
+}
+
+.sidebar-nav-title,
+.sidebar-title {
+  color: vars.$font-color;
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.sublist-nav,
+.sublist-toc {
+  background: inherit;
+  font-size: 14px; //16px
+  list-style-type: none;
+  margin: 0;
+  margin-left: -1.5rem;
+}
