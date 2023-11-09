@@ -70,10 +70,10 @@ aside {
 footer {
   // background: #d6bcec;
   border-top: 0.5px solid vars.$border-color;
+  text-align: center;
   grid-area: footer;
   margin-top: auto;
-  text-align: center;
-
+  
   ul {
     list-style-type: none;
     display: inline-flex;

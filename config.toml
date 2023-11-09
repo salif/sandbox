@@ -17,8 +17,8 @@ highlight_theme = "ayu-light"
 [extra]
 sidebar = [
   { name = "Links", urls = [
-    # { name = "Home", url = "{{ config.base_url }}" },
     { name = "Test", url = "test/" },
-    { name = "Blog", url = "posts/" },
+    { name = "Posts", url = "posts/" },
+    { name = "Firefox", url = "posts/unlock-firefox-sidebar/" },
   ] },
 ]

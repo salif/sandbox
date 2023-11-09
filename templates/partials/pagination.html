@@ -1,4 +1,4 @@
-{% if section %}
+{% if paginator.pages %}
 <section class="pagination">
 	{% if paginator.previous -%}
 	<a href="{{ paginator.previous | safe }}" class="left arrow">&#8592;</a>
