@@ -30,8 +30,34 @@
 }
 
 .sublist {
-  list-style-type: disc;
+  list-style-type: none;
+  list-style: none;
   background: inherit;
   margin-left: -1.5rem;
   margin-right: 0.1rem;
+  // padding: 0;
+
+  li::before {
+    content: "‣";
+  }
+}
+
+details {
+  padding: 0.5rem 0.5rem 0;
+
+  ul a {
+    text-decoration: none;
+    color: vars.$font-color;
+  }
+}
+
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  cursor: pointer;
+  list-style: none;
+}
+
+details[open] summary {
+  margin-bottom: 0.5em;
 }
