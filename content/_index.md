@@ -1,9 +1,6 @@
 ---
 title: Zola Testing
 ---
-# Welcome
-
-This is your test site. You can change this text in `_index.md`.
 
 ## Introduction
 
