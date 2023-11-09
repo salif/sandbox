@@ -4,6 +4,7 @@
 	{{ macros::page(page=page) }}
 	{%- endfor %}
 </section>
+
 <section class="pagination">
 	{% if paginator.previous -%}
 	<a href="{{ paginator.previous | safe }}" class="left arrow">&#8592;</a>

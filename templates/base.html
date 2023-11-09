@@ -1,3 +1,5 @@
+{% import 'macros.html' as macros %}
+
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -6,31 +8,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" itemprop="about" content="{{config.description}}">
-  <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+  <title>{{ config.title }}</title>
   {% include "partials/styles.html" %}
 </head>
 
-{# {% if section %}
-<body class="sections">
-{% endif %}
-
-{% if page %}
 <body>
-{% endif %} #}
-  
-  <body>
   <main>
-    {# {% block pagetitle %}
-    <h1>Default Title</h1>
-    {% endblock pagetitle %} #}
-
-    {% block content %}
-    {% endblock content %}
+    {% block content %}{% endblock content %}
   </main>
 
   <aside>
-    {% block sidebar %}
-    {% endblock sidebar %}
+    {% include "partials/sidebar.html" %}
   </aside>
 
   <footer>
@@ -38,7 +26,6 @@
   </footer>
 
   {# {% include "partials/scripts.html" %} #}
-
 </body>
 
 </html>

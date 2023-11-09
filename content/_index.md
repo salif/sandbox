@@ -1,5 +1,5 @@
 ---
-title: Zola Testing
+title: Homepage
 ---
 
 ## Introduction

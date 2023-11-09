@@ -1,0 +1,50 @@
+{% macro page(page) -%}
+<a href="{{ page.permalink | safe }}" class="catalogue-item">
+  <article>
+
+    {#
+    {% if page.taxonomies.categories %}<span class="categories">{{page.taxonomies.categories[0]}}</span>{% endif %}
+    #}
+
+    {#
+    {% if page.taxonomies.tags %}<span class="tags">{{page.taxonomies.tags[0]}}</span>{% endif %}
+    #}
+
+    <h2 class="catalogue-title">{{ page.title }}</h2>
+    <section class="catalogue-line">
+      <p>{{ page.description | striptags | truncate(length=280) | safe }}</p>
+    </section>
+
+    {#
+    {% if page.author %}
+    <address itemprop="author" itemscope itemtype="https://schema.org/Person">
+      <span itemprop="name">{{ page.extra.author }}</span>
+    </address>{% endif %}
+    #}
+
+    <div class="catalogue-extra">
+      <span itemprop="datePublished">
+        {{ page.date | date(format="%B %e, %Y") }}
+      </span>
+      - {{ page.reading_time }} minutes
+    </div>
+
+  </article>
+</a>
+{%- endmacro %}
+
+{#
+{% macro tag(page) %}
+<a class="post" href="{{page.permalink}}">
+  <article>
+    <h2 class="title">{{page.title}}</h2>
+    <span class="description">{{page.description}}</span>
+
+    <div class="extra">
+      <span itemprop="datePublished">{{ page.date | date(format="%d/%m/%Y") }}</span>
+      - {{ page.reading_time }} minutes
+    </div>
+  </article>
+</a>
+{% endmacro post %}
+#}

@@ -3,5 +3,7 @@
 {% include "partials/sidebar.html" %}
 
 {% block content %}
-{{ page.content | safe }}
+{{ section.content | safe }}
+
+{% include "partials/paginator.html" %}
 {% endblock content %}

@@ -29,7 +29,7 @@ body {
   grid-template-rows: 1fr auto;
   grid-template-columns: 1fr auto;
   grid-template-areas:
-    "main aside"
+    "aside main"
     "footer footer";
   max-width: calc(vars.$page-width + vars.$sidebar-width);
   min-height: 100vh;
@@ -41,31 +41,6 @@ body {
       "aside"
       "main"
       "footer";
-  }
-}
-
-body.sections {
-  @include vars.box-sizing();
-  background: vars.$background-color;
-  transition: all 0.3s ease;
-  display: grid;
-  grid-template-rows: 1fr auto;
-  grid-template-columns: 1fr auto;
-  grid-template-areas:
-  "aside main"
-  "footer footer";
-  max-width: calc(vars.$page-width + vars.$sidebar-width);
-  min-height: 100vh;
-  margin: 0 auto;
-  
-  @media (max-width: 750px) {
-    display: grid;
-    grid-template-areas:
-    "aside"
-    "main"
-    "footer";
-    grid-template-rows: auto 1fr auto;
-    // grid-template-columns: auto;
   }
 }
 

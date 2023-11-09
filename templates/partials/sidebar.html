@@ -1,0 +1,22 @@
+<section class="sidebar">
+
+  <a href="{{ config.base_url | safe }}" class="site-title">
+    <h2>{{ config.title }}</h2>
+  </a>
+
+  {% if page %}
+  <h3 class="sidebar-title">
+    {{ page.title }}
+  </h3>
+  <p>{{ page.description }}
+  </p>
+
+  {% include "partials/sidebar-toc.html" %}
+
+  {% elif section %}
+  <p>{{ config.description }}</p>
+
+  {% include "partials/sidebar-nav.html" %}
+  {% endif %}
+
+</section>

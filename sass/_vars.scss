@@ -13,6 +13,7 @@
   --page-width: 750px;
   --sidebar-width: 250px;
   --mobile-breakpoint: 600px;
+  --color-link: #4e8641;
 }
 
 // SCSS Variables
@@ -23,6 +24,7 @@ $page-width: var(--page-width);
 $sidebar-width: var(--sidebar-width);
 $mobile-breakpoint: var(--mobile-breakpoint);
 $border-color: var(--color-border);
+$link-color: var(--color-link);
 
 //Mixins
 @mixin min-screen($min-width: $body-width) {

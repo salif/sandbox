@@ -1,12 +1,6 @@
 {% extends "base.html" %}
 
-{% block pagetitle %}
-<h1>{{ section.title }}</h1>
-{% endblock pagetitle %}
-
-{% block sidebar %}
-{% include "partials/sidebar-sections.html" %}
-{% endblock sidebar %}
+{% include "partials/sidebar.html" %}
 
 {% block content %}
 {{ section.content | safe }}
