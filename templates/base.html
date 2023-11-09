@@ -21,6 +21,10 @@
     {% include "partials/sidebar.html" %}
   </aside>
 
+  {% if section %}
+  {% include "partials/pagination.html" %}
+  {% endif %}
+
   <footer>
     {% include "partials/footer.html" %}
   </footer>

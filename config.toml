@@ -17,8 +17,8 @@ highlight_theme = "ayu-light"
 [extra]
 sidebar = [
   { name = "Links", urls = [
-    { name = "Blog", url = "https://miguelpimentel.do" },
-    { name = "Digital Garden", url = "https://forgetfulnotes.com" },
-    { name = "Source", url = "https://github.com/semanticdata/zola-dinkleberg" },
+    # { name = "Home", url = "{{ config.base_url }}" },
+    { name = "Test", url = "test/" },
+    { name = "Blog", url = "posts/" },
   ] },
 ]

@@ -1,27 +1,6 @@
 @use "vars";
 
 // Sidebar
-@media (min-width: vars.$mobile-breakpoint) {
-  .sidebar {
-    width: calc(vars.$sidebar-width - 1rem);
-    position: fixed;
-    -webkit-font-smoothing: subpixel-antialiased;
-    // overflow-y: hidden;
-    // overflow-x: hidden;
-    // -ms-overflow-style: -ms-autohiding-scrollbar;
-  }
-
-  @-moz-document url-prefix() {
-    .sidebar {
-      scrollbar-width: none;
-    }
-  }
-
-  .sidebar::-webkit-scrollbar {
-    display: none;
-  }
-}
-
 .sidebar p {
   font-size: 14px; //16px
 }
@@ -29,14 +8,15 @@
 .sidebar-nav-title,
 .sidebar-title {
   color: vars.$font-color;
-  // font-size: 1.2rem;
 }
 
-.sublist-nav,
-.sublist-toc {
-  background: inherit;
-  font-size: 14px; //16px
+.sublist-nav {
   list-style-type: none;
-  padding-left: 1rem;
-  padding-right: 0.5rem;
+}
+
+.sublist-toc {
+  font-size: 14px; //16px
+  list-style-type: disc;
+  padding-left: 1.2rem;
+  // padding-right: 0.5rem;
 }

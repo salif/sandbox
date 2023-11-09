@@ -1,13 +1,16 @@
 @use "vars";
 
 .pagination {
-  border-top: 0.5px solid vars.$border-color;
-  // padding-top: 2rem;
-  position: relative;
+  grid-area: pagination;
   text-align: center;
+  // border-top: 0.5px solid vars.$border-color;
+  position: relative;
+  // margin-top: min(2rem);
+  // margin-top: max(12rem);
+  // margin-bottom: 1rem;
+  padding: 1rem;
 
   span {
-    color: cyan;
     font-size: 1.1rem;
   }
 
