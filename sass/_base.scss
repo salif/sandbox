@@ -38,8 +38,8 @@ body {
   @media (max-width: 600px) {
     display: grid;
     grid-template-areas:
+      "aside"
       "main"
-      "asie"
       "footer";
   }
 }
