@@ -2,11 +2,9 @@
 title: Markdown Showcase
 description: "This is intended as a quick reference and showcase of Markdown's synthax."
 date: 2022-12-31
-# taxonomies:
-#   tags: ["placeholder", "markdown", "reference"]
-#   categories: ["Placeholder"]
-# extra:
-#   author: Miguel Pimentel
+taxonomies:
+  tags: ["placeholder", "markdown", "reference"]
+  categories: ["Placeholder"]
 ---
 
 This is intended as a quick reference and showcase of Markdown's synthax.

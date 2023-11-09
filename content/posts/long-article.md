@@ -2,11 +2,9 @@
 title: Some articles are just so long they deserve a really long title to see if things will break well
 description: "Some articles are just so long they deserve a really long title to see if things will break well."
 date: 2016-05-20
-# taxonomies:
-#   tags: ["placeholder", "markdown", "reference"]
-#   categories: ["Placeholder"]
-# extra:
-#   author: Miguel Pimentel
+taxonomies:
+  tags: ["placeholder", "markdown", "reference"]
+  categories: ["Placeholder"]
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum.

@@ -2,14 +2,9 @@
 title: "Being a Firefighter Does Not Save You From Burnout"
 date: 2023-07-06
 description: "My life took a sharp turn early last year. I am a very private person. You will not find me sharing my personal life on social media. That said, these last 18 months have changed me profoundly, and I feel like I need to write these feelings down."
-# taxonomies:
-#   tags: ["burnout", "mental-health"]
-#   categories: ["Mental Health"]
-# extra:
-#   author: Miguel Pimentel
-#   relative_posts:
-#   - label: Blogging to Tame the Monkey Mind
-#     url: "monkey-brain"
+taxonomies:
+  tags: ["burnout", "mental-health"]
+  categories: ["Mental Health"]
 ---
 
 My life took a sharp turn early last year. I am a very private person. You will not find me sharing my personal life on social media. That said, these last 18 months have changed me profoundly, and I feel like I need to write these feelings down. This post's threshold of success is helping one other person navigate difficult times.

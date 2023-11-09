@@ -1,1 +1,12 @@
 // Custom CSS goes here
+ul.tags {
+  list-style-type: none;
+  display: inline-flex;
+  gap: 1rem;
+  font-size: 14px;
+  padding: 0;
+  margin-bottom: 6px;
+}
+.catalogue-line > p {
+  margin-bottom: 0;
+}
