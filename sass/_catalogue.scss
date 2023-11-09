@@ -1,31 +1,17 @@
 @use "vars";
 
 .catalogue-item {
-  text-decoration: none;
   color: vars.$font-color;
-  display: block;
-  // margin-bottom: 2rem;
 }
 
 .catalogue-title {
-  color: vars.$font-color;
-  line-height: 1.1em;
   font-weight: 600;
-  // margin: 0 0 8px;
 }
 
 .catalogue-line {
-  font-size: 15px;
-  line-height: 20px;
-  text-decoration: none;
-  color: vars.$font-color;
-  text-align: justify;
+  font-size: 0.9rem;
 }
 
 .catalogue-extra {
   font-size: 0.75rem;
-  line-height: 20px;
-  text-decoration: none;
-  color: vars.$font-color;
-  text-align: justify;
 }

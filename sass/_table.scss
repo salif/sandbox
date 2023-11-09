@@ -5,22 +5,17 @@ table {
   margin: 0 auto;
   color: vars.$font-color;
   border: 1px solid vars.$border-color;
-  font-size: 12pt;
   border-collapse: collapse;
+  font-size: 14px;
 }
 
 table thead th,
 table tfoot th {
-  color: vars.$font-color;
   background: rgba(0, 0, 0, 0.2);
-}
-
-table caption {
-  // padding: 0.5em;
 }
 
 table th,
 table td {
-  // padding: 0.5em;
+  padding: 2px 4px;
   border: 1px solid vars.$border-color;
 }

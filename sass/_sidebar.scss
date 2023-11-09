@@ -6,10 +6,9 @@
     width: calc(vars.$sidebar-width - 1rem);
     position: fixed;
     -webkit-font-smoothing: subpixel-antialiased;
-    // padding: 1rem 0;
     // overflow-y: hidden;
     // overflow-x: hidden;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
+    // -ms-overflow-style: -ms-autohiding-scrollbar;
   }
 
   @-moz-document url-prefix() {
@@ -30,8 +29,7 @@
 .sidebar-nav-title,
 .sidebar-title {
   color: vars.$font-color;
-  font-size: 1.2rem;
-  // margin-top: 0;
+  // font-size: 1.2rem;
 }
 
 .sublist-nav,
@@ -39,6 +37,6 @@
   background: inherit;
   font-size: 14px; //16px
   list-style-type: none;
-  // margin: 0;
-  // margin-left: -1.5rem;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
 }
