@@ -59,8 +59,8 @@ main {
 
   @media (max-width: vars.$mobile-breakpoint) {
     width: calc(vars.$page-width + vars.$sidebar-width);
-    padding-left: 0;
-    padding-right: 0;
+    // padding-left: 0;
+    // padding-right: 0;
   }
 }
 
@@ -74,8 +74,8 @@ aside {
 
   @media (max-width: vars.$mobile-breakpoint) {
     width: calc(vars.$page-width + vars.$sidebar-width);
-    padding-left: 0;
-    padding-right: 0;
+    // padding-left: 0;
+    // padding-right: 0;
     position: relative;
   }
 }
