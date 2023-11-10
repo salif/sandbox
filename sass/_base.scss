@@ -37,12 +37,12 @@ body {
     "aside main"
     ". pagination"
     ". footer";
-  max-width: calc(vars.$page-width + vars.$sidebar-width + 2rem);
+  max-width: calc(vars.$page-width + vars.$sidebar-width);
   min-height: 100vh;
   margin: 0 auto;
 
-  // @media (max-width: vars.$mobile-breakpoint) {
-  @media (max-width: 1000px) {
+  // @media (max-width: 1000px) {
+    @media (max-width: vars.$mobile-breakpoint) {
     display: grid;
     grid-template-areas:
       "aside"
@@ -57,6 +57,12 @@ main {
   width: vars.$page-width;
   padding-left: 1rem;
   padding-right: 1rem;
+
+  @media (max-width: 1000px) {
+    width: calc(vars.$page-width + vars.$sidebar-width);
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 aside {
@@ -66,15 +72,23 @@ aside {
   position: fixed;
   padding-left: 1rem;
   padding-right: 1rem;
+
+  @media (max-width: 1000px) {
+    width: calc(vars.$page-width + vars.$sidebar-width);
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+  }
 }
 
 footer {
   background: #d6bcec;
+  max-width: calc(vars.$page-width + vars.$sidebar-width);
   border-top: 0.5px solid vars.$border-color;
   text-align: center;
   grid-area: footer;
   margin-top: auto;
-  
+
   ul {
     list-style-type: none;
     display: inline-flex;
