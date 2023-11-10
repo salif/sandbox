@@ -41,7 +41,8 @@ body {
   min-height: 100vh;
   margin: 0 auto;
 
-  @media (max-width: vars.$mobile-breakpoint) {
+  // @media (max-width: vars.$mobile-breakpoint) {
+  @media (max-width: 1000px) {
     display: grid;
     grid-template-areas:
       "aside"
@@ -51,7 +52,7 @@ body {
 }
 
 main {
-  // background: #d4f2c4;
+  background: #d4f2c4;
   grid-area: main;
   width: vars.$page-width;
   padding-left: 1rem;
@@ -59,7 +60,7 @@ main {
 }
 
 aside {
-  // background: #81cfd9;
+  background: #81cfd9;
   grid-area: aside;
   width: vars.$sidebar-width;
   position: fixed;
@@ -68,7 +69,7 @@ aside {
 }
 
 footer {
-  // background: #d6bcec;
+  background: #d6bcec;
   border-top: 0.5px solid vars.$border-color;
   text-align: center;
   grid-area: footer;
