@@ -1,4 +1,4 @@
-**⚠ This repo is not being developed. It only serves as web design/deployment sandbox. ⚠**
+<h3 align=center>⚠ Not actively developed. Used as web design sandbox. ⚠</h3>
 
 <h1 align=center>Zola Testing Repo</h1>
 
