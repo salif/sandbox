@@ -4,10 +4,9 @@
     {{ sidebar.name }}
   </h3>
   <ul class="sublist-nav">
-    {%- for item in sidebar.urls %}
+    {%- for item in sidebar %}
     <li>
-      {# <a href="{{item.url}}" target="_blank">{{item.name}}</a> #}
-      <a href="{{ config.base_url }}{{ item.url }}">{{item.name}}</a>
+      <a href="{{item.url}}" target="_blank">{{item.name}}</a>
     </li>
     {% endfor %}
   </ul>
