@@ -15,10 +15,8 @@ highlight_code = false
 highlight_theme = "ayu-light"
 
 [extra]
-sidebar = [
-    { name = "Test", url = "test/" },
-    { name = "Posts", url = "posts/" },
-    { name = "Firefox", url = "posts/unlock-firefox-sidebar/" },
-    { name = "Tags", url = "tags/" },
-    { name = "#placeholder", url = "tags/placeholder/" },
-  ]
+menu = [
+  {name = "Home", url = "/"}, # Use "/" for Home
+  {name = "Posts", url = "posts"}, # Don't include slash
+  {name = "Projects", url = "projects"},
+]
