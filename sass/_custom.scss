@@ -1,13 +1,26 @@
 // Custom CSS goes here
-
-ul.tags {
-  list-style-type: none;
-  display: inline-flex;
-  gap: 1rem;
-  font-size: 14px;
-  padding: 0;
-  margin-bottom: 6px;
+body {
+  display: grid;
+  grid-template-columns: minmax(150px, 20%) 1fr;
 }
-.catalogue-line > p {
-  margin-bottom: 0;
+
+main,
+aside {
+  padding: 0.75rem;
+}
+
+main {
+  background: #d4f2c4;
+}
+
+aside {
+  background: #81cfd9;
+}
+
+@media (max-width: 1000px) {
+    body {
+      min-height: 98vh;
+      grid-template-columns: auto;
+      grid-template-rows: minmax(150px, 300px) 1fr;
+    }
 }

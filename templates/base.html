@@ -13,23 +13,16 @@
 </head>
 
 <body>
-  <main>
-    {% block content %}{% endblock content %}
-  </main>
 
   <aside>
     {% include "partials/sidebar.html" %}
   </aside>
 
-  {% if paginator.pages %}
-  {% include "partials/pagination.html" %}
-  {% endif %}
+  <main>
+    {% block content %}
+    {% endblock content %}
+  </main>
 
-  <footer>
-    {% include "partials/footer.html" %}
-  </footer>
-
-  {# {% include "partials/scripts.html" %} #}
 </body>
 
 </html>

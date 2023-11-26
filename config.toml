@@ -15,12 +15,12 @@ highlight_code = false
 highlight_theme = "ayu-light"
 
 [extra]
-sidebar = [
-  { name = "Links", urls = [
-    { name = "Test", url = "test/" },
-    { name = "Posts", url = "posts/" },
-    { name = "Firefox", url = "posts/unlock-firefox-sidebar/" },
-    { name = "Tags", url = "tags/" },
-    { name = "#placeholder", url = "tags/placeholder/" },
-  ] },
-]
+# sidebar = [
+#   { name = "Links", urls = [
+#     { name = "Test", url = "test/" },
+#     { name = "Posts", url = "posts/" },
+#     { name = "Firefox", url = "posts/unlock-firefox-sidebar/" },
+#     { name = "Tags", url = "tags/" },
+#     { name = "#placeholder", url = "tags/placeholder/" },
+#   ] },
+# ]
