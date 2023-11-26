@@ -1,4 +1,4 @@
-<nav>
+<!-- <nav>
   {%- for sidebar in config.extra.sidebar %}
   <h3 class="sidebar-nav-title">
     {{ sidebar.name }}
@@ -11,4 +11,13 @@
     {% endfor %}
   </ul>
   {%- endfor %}
+</nav> -->
+
+<nav>
+  <ul class="head-links">
+    {% for item in config.extra.menu %}
+    <li><a href="{{ get_url(path=item.url )}}">{{ item.name }}</a>
+    </li>
+    {% endfor %}
+  </ul>
 </nav>
