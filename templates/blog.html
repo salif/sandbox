@@ -1,8 +1,6 @@
 {% extends "base.html" %}
 
-{% include "partials/sidebar.html" %}
-
 {% block content %}
 {{ section.content | safe }}
-{% include "partials/paginator.html" %}
+{# {% include "partials/paginator.html" %} #}
 {% endblock content %}

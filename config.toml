@@ -15,8 +15,8 @@ highlight_code = false
 highlight_theme = "ayu-light"
 
 [extra]
-menu = [
-  {name = "Home", url = "/"}, # Use "/" for Home
-  {name = "Posts", url = "posts"}, # Don't include slash
-  {name = "Projects", url = "projects"},
+links = [
+    { name = "GitHub", icon = "github", url = "https://github.com/<your-username>" },
+    { name = "Twitter", icon = "twitter", url = "https://twitter.com/<your-username>" },
+    { name = "Email", icon = "email", url = "mailto:<your-email-address>" },
 ]
