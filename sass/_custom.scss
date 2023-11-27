@@ -21,6 +21,6 @@ aside {
     body {
       min-height: 98vh;
       grid-template-columns: auto;
-      grid-template-rows: minmax(150px, 300px) 1fr;
+      grid-template-rows: minmax(150px, 30%) 1fr;
     }
 }
