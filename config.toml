@@ -11,12 +11,14 @@ taxonomies = [
 ]
 
 [markdown]
-highlight_code = false
-highlight_theme = "ayu-light"
+highlight_code = true
+# highlight_theme = "ayu-light"
 
 [extra]
 links = [
-    { name = "GitHub", icon = "github", url = "https://github.com/<your-username>" },
-    { name = "Twitter", icon = "twitter", url = "https://twitter.com/<your-username>" },
-    { name = "Email", icon = "email", url = "mailto:<your-email-address>" },
+    { name = "Test", icon = "github", url = "test/" },
+    { name = "Test 2", icon = "github", url = "test-2/" },
+    { name = "Test 3", icon = "github", url = "test-3/" },
+    { name = "Posts", icon = "github", url = "posts/" },
+    { name = "Showcase", icon = "github", url = "posts/markdown-showcase/" },
 ]
