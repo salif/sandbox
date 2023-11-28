@@ -1,10 +1,4 @@
 {% extends "base.html" %}
 
 {% block content %}
-<main class="main">
-  {# <h3 class="page-title">{{ config.extra.label_tag }}: {{term.name}}</h3> #}
-  {% for page in term.pages %}
-  {{ macros::post(page=page) }}
-  {% endfor %}
-</main>
 {% endblock content %}

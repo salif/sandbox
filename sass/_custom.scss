@@ -1,29 +1,4 @@
 // Custom CSS goes here
-body {
-  display: grid;
-  grid-template-columns: minmax(150px, 20%) 1fr;
-}
-
-main,
-aside {
-  padding: 0.75rem;
-}
-
-main {
-  background: #d4f2c4;
-}
-
-aside {
-  background: #81cfd9;
-}
-
-@media (max-width: 1000px) {
-    body {
-      min-height: 98vh;
-      grid-template-columns: auto;
-      grid-template-rows: minmax(150px, 30%) 1fr;
-    }
-}
 
 .head-links {
   list-style-type: none;

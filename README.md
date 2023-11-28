@@ -1,5 +1,3 @@
-<h3 align=center>⚠ Not actively developed. Used as web design sandbox. ⚠</h3>
-
 <h1 align=center>Zola Testing Repo</h1>
 
 <p align="center">

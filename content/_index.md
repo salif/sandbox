@@ -1,7 +1,4 @@
 ---
-title: Homepage
-# paginate_by: 4
-# template: "blog.html"
 ---
 
 ## Introduction

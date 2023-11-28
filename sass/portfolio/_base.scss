@@ -1,0 +1,178 @@
+@use "variables" as vars;
+//Core style
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html,
+body {
+  text-rendering: optimizeLegibility;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+body {
+  font-family: vars.$root-font-family;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+footer,
+header,
+main {
+  display: block;
+}
+
+// Links
+a {
+  color: vars.$link-color;
+  line-height: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-transition: color 0.1s ease-in-out;
+  -moz-transition: color 0.1s ease-in-out;
+  -o-transition: color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out;
+}
+a img {
+  border: 0;
+}
+a:hover,
+a:focus {
+  color: vars.$link-color-hover;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+
+// Headings
+h1,
+h2 {
+  font-style: normal;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+h1 {
+  margin: 0.67em 0;
+}
+
+// Text
+p {
+  margin-top: 0;
+}
+strong {
+  font-weight: bold;
+  line-height: inherit;
+}
+em,
+i {
+  font-style: italic;
+  line-height: inherit;
+}
+
+// Tables
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 13px;
+  max-width: 100%;
+}
+table thead th,
+table tfoot th {
+  background: rgba(0, 0, 0, 0.2);
+}
+table th,
+table td {
+  padding: 2px 6px;
+  border: 1px solid gray;
+}
+
+// Code
+pre,
+code {
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+code {
+  padding: 2px;
+  background: rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+  line-height: 1;
+}
+pre {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0.25rem 0.5rem;
+
+  > code {
+    border: 0;
+    background: none;
+  }
+}
+kbd {
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  box-shadow: inset 0 -1px 0 #959da5;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+// Horizontal Line
+hr {
+  box-sizing: content-box;
+  margin-top: 1rem;
+  clear: both;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #fff;
+}
+
+// Footer
+footer {
+  font-size: 14px;
+}
+
+// Images
+img {
+  display: inline-block;
+  border-radius: 5px;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+// Table of Contents
+summary {
+  cursor: pointer;
+}
+details {
+  font-size: 15px;
+}
+@media (min-width: 38em) {
+  details {
+    font-size: 18px;
+  }
+}
+
+// Blog post reading time
+time {
+  font-size: 16px;
+}
+
+// Quotes
+blockquote {
+  border-left: solid 2px grey;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+}

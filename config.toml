@@ -6,8 +6,8 @@ generate_feed = false
 minify_html = false
 build_search_index = false
 taxonomies = [
-  { name = "categories", feed = true },
-  { name = "tags", feed = true },
+  { name = "categories", feed = false },
+  { name = "tags", feed = false },
 ]
 
 [markdown]
@@ -15,10 +15,15 @@ highlight_code = true
 # highlight_theme = "ayu-light"
 
 [extra]
-links = [
-    { name = "Test", icon = "github", url = "test/" },
-    { name = "Test 2", icon = "github", url = "test-2/" },
-    { name = "Test 3", icon = "github", url = "test-3/" },
-    { name = "Posts", icon = "github", url = "posts/" },
-    { name = "Showcase", icon = "github", url = "posts/markdown-showcase/" },
+internalLinks = [
+  { url = "test", name = "Test" },
+  { url = "posts", name = "Posts" },
+  { url = "posts/markdown-showcase", name = "Showcase" },
+  { url = "projects", name = "Projects" },
+  { url = "projects/discord-in-sidebar", name = "GitHub in Sidebar" },
+]
+externalLinks = [
+  { url = "https://miguelpimentel.do/", name = "Blog" },
+  { url = "https://foretfulnotes.com/", name = "Garden" },
+  { url = "https://github.com/semanticdata/", name = "GitHub" },
 ]

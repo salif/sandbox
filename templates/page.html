@@ -1,7 +1,17 @@
 {% extends "base.html" %}
 
-{% include "partials/sidebar.html" %}
-
+<!-- Layout for all non-blog pages. -->
 {% block content %}
-{{ page.content | safe }}
+<article class="page">
+  {% include "partials/breadcrumbs.html" %}
+  <h1 class="page-title">{{ page.title | safe }}</h1>
+  {% if page.description %}
+  <p>{{ page.description | safe }}</p>
+  {% endif %}
+  {% if page.toc %}
+  {% include "partials/toc.html" %}
+  {% endif %}
+  <hr>
+  {{ page.content | safe }}
+</article>
 {% endblock content %}
