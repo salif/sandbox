@@ -5,7 +5,9 @@
       <a href="{{ get_url(path=link.url )}}/" aria-label="{{ link.name }}">{{ link.name }}</a>
     </li>
     {% endfor %}
-    <br>
+  </ul>
+
+  <ul class="head-links">
     {% for link in config.extra.externalLinks -%}
     <li>
       <a href="{{ get_url(path=link.url )}}/" aria-label="{{ link.name }}" target="_blank" rel='noreferrer noopener'>{{
