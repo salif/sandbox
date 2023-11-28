@@ -22,8 +22,8 @@ internalLinks = [
   { url = "projects", name = "Projects" },
   { url = "projects/discord-in-sidebar", name = "GitHub in Sidebar" },
 ]
-externalLinks = [
-  { url = "https://miguelpimentel.do/", name = "Blog" },
-  { url = "https://foretfulnotes.com/", name = "Garden" },
-  { url = "https://github.com/semanticdata/", name = "GitHub" },
-]
+# externalLinks = [
+#   { url = "https://miguelpimentel.do/", name = "Blog" },
+#   { url = "https://foretfulnotes.com/", name = "Garden" },
+#   { url = "https://github.com/semanticdata/", name = "GitHub" },
+# ]

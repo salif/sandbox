@@ -9,6 +9,11 @@ $mobile-breakpoint: 1000px;
 $page-width: 750px;
 $sidebar-width: 250px;
 
+// From Portfolio
+$root-font-family: "Bitter", serif;
+$link-color: brown;
+$link-color-hover: darkgreen;
+
 //Mixins
 @mixin min-screen($min-width: $body-width) {
   @media screen and (min-width: $min-width) {

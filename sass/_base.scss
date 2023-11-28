@@ -1,6 +1,33 @@
+// @use "vars";
+
+// Core Styles
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  text-rendering: optimizeLegibility;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
 body {
   display: grid;
   grid-template-columns: minmax(200px, 20%) 1fr;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 main,
@@ -10,16 +37,132 @@ aside {
 
 main {
   // background: #d4f2c4;
+  background: inherit;
 }
 
 aside {
   // background: #81cfd9;
+  background: inherit;
 }
 
-@media (max-width: 1000px) {
-  body {
-    min-height: 98vh;
-    grid-template-columns: auto;
-    grid-template-rows: minmax(200px, 30%) 1fr;
+// Links
+a {
+  cursor: pointer;
+  -webkit-transition: color 0.1s ease-in-out;
+  -moz-transition: color 0.1s ease-in-out;
+  -o-transition: color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out;
+}
+
+// Text Formatting
+strong {
+  font-weight: bold;
+  line-height: inherit;
+}
+
+em,
+i {
+  font-style: italic;
+  line-height: inherit;
+}
+
+// Tables
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 13px;
+  max-width: 100%;
+}
+
+table thead th,
+table tfoot th {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+table th,
+table td {
+  padding: 2px 6px;
+  border: 1px solid gray;
+}
+
+// Code
+pre,
+code {
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+code {
+  padding: 2px;
+  background: rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+  line-height: 1;
+}
+
+pre {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0.25rem 0.5rem;
+
+  > code {
+    border: 0;
+    background: none;
   }
+}
+
+kbd {
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  box-shadow: inset 0 -1px 0 #959da5;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+// Horizontal Line
+hr {
+  box-sizing: content-box;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #fff;
+  clear: both;
+}
+
+// Images
+img {
+  display: inline-block;
+  border-radius: 5px;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+// Table of Contents
+summary {
+  cursor: pointer;
+}
+
+details {
+  font-size: inherit;
+}
+
+// Table of Contents
+summary {
+  cursor: pointer;
+}
+
+// Blog post reading time
+time {
+  font-size: 0.9rem;
+}
+
+// Quotes
+blockquote {
+  border-left: solid 2px grey;
+  padding-left: 1rem;
+  margin-left: 1rem;
+  // font-style: italic;
 }

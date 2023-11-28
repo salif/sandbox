@@ -1,5 +1,4 @@
 <aside>
-
   <a href="{{ config.base_url | safe }}" class="site-title">
     <h2>{{ config.title }}</h2>
   </a>
@@ -10,13 +9,10 @@
   </h3>
   <p>{{ page.description }}
   </p>
-
-  {% include "partials/sidebar-toc.html" %}
-
+  {% include "partials/toc.html" %}
   {% endif %}
 
   <p>{{ config.description }}</p>
-
   {% include "partials/sidebar-nav.html" %}
 
 </aside>

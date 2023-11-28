@@ -1,5 +1,3 @@
-{% import 'macros.html' as macros %}
-
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -13,8 +11,9 @@
 </head>
 
 <body>
-
-    {% include "partials/sidebar.html" %}
+    {# <aside> #}
+      {% include "partials/sidebar.html" %}
+    {# </aside> #}
 
   <main>
     {% block content %}
