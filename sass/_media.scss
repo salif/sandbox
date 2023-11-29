@@ -1,38 +1,30 @@
 // Undefined
 @media (max-width: 1000px) {
   body {
-    min-height: 98vh;
+    /* min-height: 98vh; */
     grid-template-columns: auto;
-    grid-template-rows: minmax(200px, 30%) 1fr;
+    grid-template-rows: minmax(300px, 30%) 1fr;
   }
 }
 
 // Large Screens
 @media screen and (min-width: 64em) {
   .sidebar {
-    padding-left: 1rem;
-  }
-}
-
-// Wider than 38em
-@media (min-width: 38em) {
-  body {
-    line-height: 1.5;
-    // font-size: 20px;
+    /* padding-left: 1rem; */
   }
 }
 
 // Medium Screens
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .sidebar {
-    margin-left: 1rem;
-    padding-left: 0.5rem;
+    /* margin-left: 1rem; */
+    /* padding-left: 0.5rem; */
   }
 }
 // Small Screens
 @media only screen and (max-width: 40em) {
   .sidebar {
-    margin-left: 1rem;
-    padding-left: 0.5rem;
+    /* margin-left: 1rem; */
+    /* padding-left: 0.5rem; */
   }
 }
