@@ -24,12 +24,13 @@ body {
 }
 
 body {
-  display: grid;
+  // display: grid;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: vars.$root-font-family;
   /* grid-template-columns: minmax(200px, 20%) 1fr; */
   // width: vars.$full-page-width;
+  background: #e0e0e0;
 }
 
 main,
@@ -38,18 +39,16 @@ aside {
 }
 
 aside {
-  // background: #81cfd9;
-  background: inherit;
+  background: #81cfd9;
   /* position: fixed; */
   max-width: vars.$sidebar-width;
 }
 
 main {
-  // background: #d4f2c4;
-  background: inherit;
-  position: relative;
-  left: vars.$sidebar-width;
-  max-width: vars.$page-width;
+  background: #d4f2c4;
+  // position: relative;
+  // left: calc(vars.$sidebar-width + 1rem);
+  // max-width: vars.$page-width;
 }
 
 // Improved typography

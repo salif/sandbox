@@ -1,37 +1,20 @@
-// Undefined
-@media (max-width: 1000px) {
-  body {
-    /* min-height: 98vh; */
-    grid-template-columns: auto;
-    grid-template-rows: minmax(300px, 30%) 1fr;
-  }
-}
-
-@media (min-width: 1001px) {
-	body {
-		grid-template-rows: auto;
-		grid-template-columns: minmax(300px, 30%) 1fr;
-	}
-}
-
 // Large Screens
-@media screen and (min-width: 64em) {
+@media only screen and (min-width: 64rem) {
   .sidebar {
-    /* padding-left: 1rem; */
+    color: greenyellow;
   }
 }
 
 // Medium Screens
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+@media only screen and (min-width: 25.063rem) and (max-width: 64rem) {
   .sidebar {
-    /* margin-left: 1rem; */
-    /* padding-left: 0.5rem; */
+    color: magenta;
   }
 }
+
 // Small Screens
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 25rem) {
   .sidebar {
-    /* margin-left: 1rem; */
-    /* padding-left: 0.5rem; */
+    color: aqua;
   }
 }
