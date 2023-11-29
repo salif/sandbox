@@ -25,13 +25,10 @@ body {
 
 body {
   display: grid;
-  align-items: center;
-  align-self: center;
-  align-content: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: vars.$root-font-family;
-  // grid-template-columns: minmax(200px, 20%) 1fr;
+  grid-template-columns: minmax(200px, 20%) 1fr;
   // width: vars.$full-page-width;
 }
 
