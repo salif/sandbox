@@ -40,7 +40,7 @@ aside {
 aside {
   // background: #81cfd9;
   background: inherit;
-  position: fixed;
+  /* position: fixed; */
   max-width: vars.$sidebar-width;
 }
 
@@ -49,7 +49,7 @@ main {
   background: inherit;
   position: relative;
   left: vars.$sidebar-width;
-  width: vars.$page-width;
+  max-width: vars.$page-width;
 }
 
 // Improved typography
