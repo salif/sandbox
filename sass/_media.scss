@@ -7,6 +7,13 @@
   }
 }
 
+@media (min-width: 1001px) {
+	body {
+		grid-template-rows: auto;
+		grid-template-columns: minmax(300px, 30%) 1fr;
+	}
+}
+
 // Large Screens
 @media screen and (min-width: 64em) {
   .sidebar {
