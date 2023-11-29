@@ -9,7 +9,7 @@
 
 // Large Screens
 @media screen and (min-width: 64em) {
-  .head-links {
+  .sidebar {
     padding-left: 1rem;
   }
 }
@@ -24,14 +24,14 @@
 
 // Medium Screens
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  .head-links {
+  .sidebar {
     margin-left: 1rem;
     padding-left: 0.5rem;
   }
 }
 // Small Screens
 @media only screen and (max-width: 40em) {
-  .head-links {
+  .sidebar {
     margin-left: 1rem;
     padding-left: 0.5rem;
   }

@@ -1,0 +1,26 @@
+@use "vars";
+
+.wrapper {
+  margin: 0 auto;
+}
+
+// Sidebar
+.sidebar-title {
+  color: vars.$font-color;
+  margin-top: initial;
+}
+
+.sidebar-nav {
+  list-style-type: none;
+  padding-left: 1rem;
+  line-height: 1.75;
+}
+
+// Table of Contents
+.table-of-content {
+  list-style-type: circle;
+  font-size: vars.$font-size-small; //16px
+  line-height: 1.75;
+  // padding-left: 2rem;
+  // padding-right: 0.5rem;
+}
