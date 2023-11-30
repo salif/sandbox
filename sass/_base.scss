@@ -17,40 +17,88 @@ html,
 body {
   text-rendering: optimizeLegibility;
   line-height: 1.5;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
   font-size: 100%;
   box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 body {
-  // display: grid;
+  font-family: vars.$font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: vars.$root-font-family;
-  /* grid-template-columns: minmax(200px, 20%) 1fr; */
-  // width: vars.$full-page-width;
-  background: #e0e0e0;
 }
 
+// Layout
 main,
 aside {
+  display: inline-flex;
+  flex-direction: column;
   padding: 0.75rem;
+  // border: solid 1px rebeccapurple;
 }
 
 aside {
-  background: #81cfd9;
-  /* position: fixed; */
   max-width: vars.$sidebar-width;
+  position: fixed;
 }
 
 main {
-  background: #d4f2c4;
-  // position: relative;
-  // left: calc(vars.$sidebar-width + 1rem);
-  // max-width: vars.$page-width;
+  max-width: vars.$page-width;
+  position: relative;
+  left: vars.$sidebar-width;
+  margin-bottom: 1.5rem;
 }
 
+.wrapper {
+  width: vars.$full-page-width;
+  margin: 0 auto;
+}
+
+// Footer (sidebar)
+footer {
+  &.footer-sidebar {
+    position: fixed;
+    bottom: 1.5rem;
+    max-width: inherit;
+    font-size: vars.$font-size-small;
+  }
+  &.footer-main {
+    display: none;
+  }
+}
+// Small Screens
+@media only screen and (max-width: vars.$mobile-breakpoint) {
+  .wrapper {
+    width: auto;
+  }
+  aside {
+    max-width: 100%;
+    position: initial;
+  }
+  main {
+    left: 0;
+    margin-bottom: 0;
+  }
+  main,
+  aside {
+    display: flex;
+  }
+  footer {
+    &.footer-sidebar {
+      display: none;
+    }
+    &.footer-main {
+      display: inline-flex;
+      padding-bottom: 1.5rem;
+      max-width: 100%;
+    }
+  }
+  footer.footer-main p {
+    text-align: center;
+    width: vars.$full-page-width;
+  }
+}
 // Improved typography
 // Headins
 h1 {
@@ -177,18 +225,9 @@ img {
 }
 
 // Table of Contents
-summary {
-  cursor: pointer;
-}
-
 details {
-  font-size: inherit;
-}
-
-// Table of Contents
-details {
-  cursor: pointer;
   // border: 1px solid #aaa;
+  cursor: pointer;
   border-radius: 4px;
   padding: 0.5em 0.5em 0;
   margin-top: 1rem;
@@ -221,10 +260,33 @@ blockquote {
   margin-left: 1rem;
 }
 
-// Footer (sidebar)
-footer {
-  position: fixed;
-  bottom: 1.5rem;
-  max-width: inherit;
-  font-size: vars.$font-size-small;
+// Sidebar
+.sidebar-title {
+  color: vars.$font-color;
+  margin-top: initial;
+}
+
+.sidebar-nav {
+  list-style-type: none;
+  padding-left: 1rem;
+  line-height: 1.75;
+}
+
+// Table of Contents
+.table-of-content {
+  list-style-type: circle;
+  font-size: vars.$font-size-small; //16px
+  line-height: 1.75;
+  // padding-left: 2rem;
+  // padding-right: 0.5rem;
+}
+
+// Boxes and Shadows
+.box {
+  border-radius: 5px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.box:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }

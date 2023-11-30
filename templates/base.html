@@ -12,17 +12,18 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    {# <aside> #}
-      {% include "partials/sidebar.html" %}
-    {# </aside> #}
 
-  <main>
-    {% block content %}
-    {% endblock content %}
-  </main>
+  <section class="wrapper">
+    {% include "partials/sidebar.html" %}
 
-  </div>
+    {# <main class="box"> #}
+      <main>
+        {% block content %}
+        {% endblock content %}
+      </main>
+  </section>
+
+  {% include "partials/footer-main.html" %}
 </body>
 
 </html>
