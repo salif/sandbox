@@ -1,7 +1,8 @@
 ---
 title: Projects
 sort_by: title
-template: "projects.html"
+# template: "projects.html"
 page_template: "page.html"
 ---
-Here you can find some of my projects.
+
+In this section, you can find a few of my projects.
