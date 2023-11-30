@@ -91,12 +91,13 @@ footer {
     &.footer-main {
       display: inline-flex;
       padding-bottom: 1.5rem;
+      font-size: 0.9rem;
       max-width: 100%;
+      & p {
+        text-align: center;
+        width: vars.$full-page-width;
+      }
     }
-  }
-  footer.footer-main p {
-    text-align: center;
-    width: vars.$full-page-width;
   }
 }
 // Improved typography
