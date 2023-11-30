@@ -270,6 +270,9 @@ blockquote {
   list-style-type: none;
   padding-left: 1rem;
   line-height: 1.75;
+  & li {
+    padding-bottom: 0.25rem;
+  }
 }
 
 // Table of Contents
