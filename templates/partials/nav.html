@@ -1,8 +1,0 @@
-<nav>
-  <ul class="sidebar-nav">
-    {% for item in config.extra.menu %}
-    <li><a href="{{ get_url(path=item.url )}}">{{ item.name }}</a>
-    </li>
-    {% endfor %}
-  </ul>
-</nav>

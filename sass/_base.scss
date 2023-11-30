@@ -55,18 +55,18 @@ main {
   margin: 0 auto;
 }
 
-// Footer (sidebar)
-footer {
-  &.footer-sidebar {
-    position: fixed;
-    bottom: 1.5rem;
-    max-width: inherit;
-    font-size: vars.$font-size-small;
-  }
-  &.footer-main {
-    display: none;
-  }
+// Footer
+footer.footer-sidebar {
+  position: fixed;
+  bottom: 1.5rem;
+  max-width: inherit;
+  font-size: vars.$font-size-small;
+  // background: maroon;
 }
+footer.footer-main {
+  display: none;
+}
+
 // Small Screens
 @media only screen and (max-width: vars.$mobile-breakpoint) {
   .wrapper {

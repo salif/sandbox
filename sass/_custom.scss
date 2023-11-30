@@ -7,3 +7,10 @@
 .breadcrumb-container {
   margin-bottom: 1rem;
 }
+
+.base-list {
+  list-style-type: circle;
+  & li {
+    padding-bottom: 0.5rem;
+  }
+}
