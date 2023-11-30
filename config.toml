@@ -3,7 +3,7 @@ title = "Zola Testing"
 description = "This repo is used to test new web elements. It is an amalgamation of code snippets, all weaved together by Zola."
 compile_sass = true
 generate_feed = false
-minify_html = false
+minify_html = true
 build_search_index = false
 taxonomies = [
   { name = "categories", feed = false },
