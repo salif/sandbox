@@ -1,3 +1,4 @@
+@use "vars";
 // Custom CSS goes here
 
 .post-title {
@@ -13,4 +14,18 @@
   & li {
     padding-bottom: 0.5rem;
   }
+}
+
+.post-description {
+  padding-bottom: 1rem;
+}
+
+header {
+  position: relative;
+  padding-left: 0.75rem;
+  border-bottom: solid 1px grey;
+}
+
+.site-title {
+  margin: 0.5rem;
 }

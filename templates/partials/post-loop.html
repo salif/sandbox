@@ -4,14 +4,15 @@
 <article class="post">
   <time itemprop="datePublished" datetime="{{ page.date | safe }}">{{ page.date | date(format="%B %e, %Y") | safe }} •
     {{
-    page.reading_time }} minutes</time>
+    page.reading_time }} minutes read</time>
   <a href="{{ page.permalink }}">
     <h1 class="post-title">{{ page.title | safe }}</h1>
   </a>
   {% if page.description %}
-  <p>{{ page.description | safe }}</p>
+  <p class="post-description">{{ page.description | safe }}</p>
   {% endif %}
-  <a href="{{ page.permalink | safe }}">Continue reading…</a>
+  {# <br> #}
+  <a href="{{ page.permalink | safe }}" id="continue-reading">Continue reading…</a>
 </article>
 {% endfor %}
 {% endif %}

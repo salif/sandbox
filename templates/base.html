@@ -12,12 +12,19 @@
 </head>
 
 <body>
+
   <section class="wrapper">
-    <aside class="sidebar">
-      <a href="{{ config.base_url | safe }}" class="site-title">
-        <h2 class="sidebar-title">{{ config.title }}</h2>
+
+    <header>
+      <a href="{{ config.base_url | safe }}">
+        <h2 class="site-title">{{ config.title }}</h2>
       </a>
-      <p>{{ config.description }}</p>
+    </header>
+
+    <aside class="sidebar">
+
+      {% include "partials/sidebar-content.html" %}
+
       {% include "partials/sidebar-nav.html" %}
 
       <footer class="footer-sidebar">
