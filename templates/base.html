@@ -15,13 +15,13 @@
 
   <section class="wrapper">
 
-    <header>
+    <header class="box">
       <a href="{{ config.base_url | safe }}">
         <h2 class="site-title">{{ config.title }}</h2>
       </a>
     </header>
 
-    <aside class="sidebar">
+    <aside class="sidebar box">
 
       {% include "partials/sidebar-content.html" %}
 
@@ -36,7 +36,7 @@
 
     </aside>
 
-    <main>
+    <main class="box">
       {% block content %}
       {% endblock content %}
     </main>

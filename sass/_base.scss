@@ -24,8 +24,7 @@ body {
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
   background: vars.$background-color;
   font-family: vars.$font-family;
   -webkit-font-smoothing: antialiased;
@@ -44,14 +43,15 @@ aside {
 aside {
   max-width: vars.$sidebar-width;
   position: fixed;
-  top: 50px;
+  top: 3.5rem;
 }
 
 main {
   max-width: vars.$page-width;
   position: relative;
-  left: vars.$sidebar-width;
   margin-bottom: 1.5rem;
+  left: calc(vars.$sidebar-width + 1rem);
+  top: 3.5rem;
 }
 
 .wrapper {
@@ -291,10 +291,11 @@ blockquote {
 
 // Boxes and Shadows
 .box {
-  border-radius: 5px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.3);
+  @include vars.transition(box-shadow 0.5s ease-in-out);
 }
 
 .box:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.3);
 }
