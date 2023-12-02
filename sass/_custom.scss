@@ -21,9 +21,13 @@
 }
 
 header {
-  position: relative;
+  position: fixed;
   padding-left: 0.75rem;
   border-bottom: solid 1px grey;
+  width: 100%;
+  background: vars.$background-color;
+  max-width: calc(vars.$sidebar-width + vars.$page-width);
+  z-index: 999;
 }
 
 .site-title {
