@@ -1,12 +1,46 @@
-@use "vars";
 // Custom CSS goes here
+@use "vars";
 
-.post-title {
+// .post-title {
+//   margin-top: 0.2rem;
+// }
+
+// .breadcrumb-container {
+//   margin-bottom: 1rem;
+// }
+
+// .main-content {
+//   margin-top: 1rem;
+// }
+
+.post-description {
+  text-align: justify;
+}
+
+.site-title {
   margin-top: 0;
 }
 
-.breadcrumb-container {
-  margin-bottom: 1rem;
+.sidebar-title {
+  margin-top: initial;
+}
+
+.sidebar-nav {
+  list-style-type: none;
+  padding-left: 1rem;
+  & li {
+    padding-bottom: 0.5rem;
+  }
+}
+
+// Table of Contents
+.table-of-content {
+  list-style-type: circle;
+  font-size: vars.$font-size-small;
+  margin-bottom: 0;
+  & li {
+    padding-bottom: 0.25rem;
+  }
 }
 
 .base-list {
@@ -16,20 +50,13 @@
   }
 }
 
-.post-description {
-  padding-bottom: 1rem;
+// Boxes and Shadows
+.box {
+  border-radius: 0.5rem;
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.3);
+  @include vars.transition(box-shadow 0.5s ease-in-out);
 }
 
-header {
-  position: fixed;
-  padding-left: 0.75rem;
-  border-bottom: solid 1px grey;
-  width: 100%;
-  background: vars.$background-color;
-  max-width: calc(vars.$sidebar-width + vars.$page-width);
-  z-index: 999;
-}
-
-.site-title {
-  margin: 0.5rem;
+.box:hover {
+  box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.3);
 }
