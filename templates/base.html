@@ -15,19 +15,26 @@
 
   <section class="wrapper">
 
-    <header>
+    <aside class="sidebar box">
+
+    {# <header class="box"> #}
       <a href="{{ config.base_url | safe }}">
         <h2 class="site-title">{{ config.title }}</h2>
       </a>
-    </header>
-
-    <aside class="sidebar">
-
-      {% include "partials/sidebar-content.html" %}
 
       {% include "partials/sidebar-nav.html" %}
 
-      <footer class="footer-sidebar">
+    {# </header> #}
+
+    {# <aside class="sidebar box"> #}
+
+      {% include "partials/sidebar-content.html" %}
+
+      {# {% include "partials/sidebar-nav.html" %} #}
+
+      {# <footer class="footer-sidebar box"> #}
+      <footer class="footer-sidebar box">
+        {# <p class="footer-sidebar">Powered by <a href="https://www.getzola.org/">Zola</a> and <a #}
         <p>Powered by <a href="https://www.getzola.org/">Zola</a> and <a
             href="https://github.com/semanticdata/zola-testing">Testing</a>.
           <br>© 2023 Miguel Pimentel
@@ -36,12 +43,12 @@
 
     </aside>
 
-    <main>
+    <main class="box">
       {% block content %}
       {% endblock content %}
     </main>
 
-    <footer class="footer-main">
+    <footer class="footer-main box">
       <p>Powered by <a href="https://www.getzola.org/">Zola</a> and <a
           href="https://github.com/semanticdata/zola-testing">Testing</a>.
         <br>© 2023 Miguel Pimentel
