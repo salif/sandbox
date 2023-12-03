@@ -1,4 +1,4 @@
-<div class="breadcrumb-container">
+<section class="breadcrumb-container">
   <a class="breadcrumb-path" href="/">Home</a>
   {% set current = section | default(value=page) %}
   {% for ancestor in current.ancestors %}
@@ -11,4 +11,4 @@
   {% endfor %}
   <span class="breadcrumb-separator"> / </span>
   <a class="breadcrumb-path active" href="{{ current.permalink }}">{{ current.title }}</a>
-</div>
+</section>
