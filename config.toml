@@ -1,10 +1,13 @@
 base_url = "https://miguelpimentel.do/zola-testing/"
 title = "Zola Testing"
-description = "This repo is used to test new web elements. It is an amalgamation of code snippets, all weaved together by Zola."
+description = "This repository is used to test new web elements. It is an amalgamation of code snippets, all weaved together by Zola."
+
 compile_sass = true
 generate_feed = false
-minify_html = true
+minify_html = false
 build_search_index = false
+
+author = "Miguel Pimentel"
 taxonomies = [
   { name = "categories", feed = false },
   { name = "tags", feed = false },
@@ -18,9 +21,9 @@ highlight_code = true
 internalLinks = [
   { url = "test", name = "Test" },
   { url = "posts", name = "Posts" },
-  { url = "posts/markdown-showcase", name = "Showcase" },
+  # { url = "posts/markdown-showcase", name = "Showcase" },
   { url = "projects", name = "Projects" },
-  { url = "projects/discord-in-sidebar", name = "GitHub in Sidebar" },
+  # { url = "projects/discord-in-sidebar", name = "GitHub in Sidebar" },
 ]
 # externalLinks = [
 #   { url = "https://miguelpimentel.do/", name = "Blog" },

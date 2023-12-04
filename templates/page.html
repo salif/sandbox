@@ -4,14 +4,6 @@
 {% block content %}
 <article class="page">
   {% include "partials/breadcrumbs.html" %}
-  <h1 class="page-title">{{ page.title | safe }}</h1>
-  {% if page.description %}
-  <p>{{ page.description | safe }}</p>
-  {% endif %}
-  {% if page.toc %}
-  {% include "partials/toc.html" %}
-  {% endif %}
-  <hr>
   {{ page.content | safe }}
 </article>
 {% endblock content %}

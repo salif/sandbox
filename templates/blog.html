@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 
+<!-- Layout for the blog section. -->
 {% block content %}
-<h1>{{ section.title }}</h1>
-{{ section.content | safe }}
 {% include "partials/post-loop.html" %}
 {% endblock content %}

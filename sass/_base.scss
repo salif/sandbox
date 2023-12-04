@@ -13,12 +13,12 @@
   box-sizing: inherit;
 }
 
-main,
-aside,
-header,
-footer {
-  border: solid 1px rebeccapurple;
-}
+// main,
+// aside,
+// header,
+// footer {
+//   border: solid 1px rebeccapurple;
+// }
 
 html,
 body {
@@ -53,16 +53,15 @@ main {
   position: relative;
   max-width: vars.$page-width;
   left: calc(vars.$sidebar-width + 1rem);
+  margin-bottom: 1rem;
 }
 
 aside {
   max-width: vars.$sidebar-width;
   position: fixed;
-  text-align: justify;
 }
 
 header {
-  // max-width: calc(vars.$sidebar-width + vars.$page-width + 1rem);
   max-width: vars.$sidebar-width;
 }
 
@@ -83,49 +82,26 @@ header {
 
 // Small Screens
 @media only screen and (max-width: vars.$mobile-breakpoint) {
-  .wrapper {
-    // width: auto;
-  }
   aside {
     position: initial;
     max-width: 100%;
     margin-bottom: 1rem;
   }
   main {
+    max-width: 100%;
     position: initial;
-    // height: 100vh;
-    // overflow-y: visible;
   }
+  footer,
   main,
   aside {
-    // display: flex;
-  }
-  footer {
-    //   &.footer-sidebar {
-    //     display: none;
-    //   }
-    &.footer-main {
-      //     display: none;
-      display: block;
-      padding: 0.5rem;
-      padding-bottom: 1rem;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      text-align: center;
-      vertical-align: middle;
-      //     font-size: 0.9rem;
-      //     max-width: 100%;
-      //     & p {
-      //       width: vars.$full-page-width;
-      //     }
-    }
+    margin: 1rem 0.5rem;
   }
 }
 
 // Improved typography
 h1 {
   font-size: 1.75rem;
-  margin-top: 2.25rem;
+  margin-top: 1rem; // 2.25
   margin-bottom: 1rem;
 }
 
@@ -164,8 +140,7 @@ a:hover {
   -moz-transition: text-decoration-color 0.5s ease-in-out;
   -o-transition: text-decoration-color 0.5s ease-in-out;
   transition: text-decoration-color 0.5s ease-in-out;
-  text-decoration-color: palevioletred;
-  // text-underline-offset: 0.2em;
+  text-decoration-color: vars.$underline-color;
 }
 
 // Text Formatting
@@ -202,11 +177,11 @@ table td {
 pre {
   padding: 0.5rem;
   border-radius: 8px;
-  overflow-x: auto;
   border: 1px solid lightgray;
 }
 
 code {
+  word-break: break-all;
   border-radius: 3px;
   padding: 2px 2px;
   background: rgba(0, 0, 0, 0.05);
@@ -271,6 +246,7 @@ details[open] summary {
 // Blog post reading time
 time {
   font-size: 0.9rem;
+  // margin-top: 1rem;
 }
 
 // Quotes

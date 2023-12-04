@@ -1,5 +1,5 @@
 ---
-title: "🔗 Discord in Sidebar"
+title: "Discord in Sidebar"
 description: "Firefox WebExtension to display Discord within the Firefox sidebar. This extension adds a new section to the sidebar which contains the Discord web app. It also adds a shortcut, and a button toggle within the toolbar."
 date: 2023-02-09
 ---

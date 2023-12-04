@@ -1,6 +1,5 @@
 {% if section.pages %}
 {% for page in section.pages %}
-<hr>
 <article class="post">
   <a href="{{ page.permalink | safe }}">
     <h1 class="post-title">{{ page.title | safe }}</h1>
@@ -8,7 +7,7 @@
   {% if page.description %}
   <p>{{ page.description | truncate(length=280) | safe }}</p>
   {% endif %}
-  <a href="{{ page.permalink | safe }}">Read more…</a>
+  <a href="{{ page.permalink | safe }}" id="read-more">Read more…</a>
 </article>
 {% endfor %}
 {% endif %}

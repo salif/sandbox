@@ -1,5 +1,5 @@
 ---
-title: "💼 Portfolio"
+title: "Portfolio"
 date: 2023-11-13
 description: "Portfolio is a Zola theme. It's based on the Portfolio theme for Jekyll. "
 updated: 2023-11-24

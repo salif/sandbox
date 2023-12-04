@@ -1,4 +1,4 @@
-<h1 align=center>Zola Testing Repo</h1>
+<h1 align=center>🧪 Zola Testing</h1>
 
 <p align="center">
   <img src="https://img.shields.io/github/languages/code-size/semanticdata/zola-testing" />
@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/website/https/miguelpimentel.do/zola-testing.svg" />
 </p>
 
-This repo is used to test new web elements. It is an amalgamation of code snippets, all weaved together by Zola.
+This repository is used to test new web elements. It is an amalgamation of code snippets, all weaved together by Zola.
 
 ## Requirements
 

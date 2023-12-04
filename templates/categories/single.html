@@ -1,4 +1,26 @@
 {% extends "base.html" %}
 
 {% block content %}
+
+<section class="catalogue">
+  <h1>Category: {{ term.name | capitalize }}</h1>
+  <a href="/categories/">Go back</a>.
+  {% for page in term.pages %}
+  <hr>
+  <article class="post">
+    <time itemprop="datePublished" datetime="{{ page.date | safe }}">{{ page.date | date(format="%B %e, %Y") | safe }} •
+      {{
+      page.reading_time }} minutes read</time>
+    <a href="{{ page.permalink }}">
+      <h1 class="post-title">{{ page.title | safe }}</h1>
+    </a>
+    {% if page.description %}
+    <p class="post-description">{{ page.description | safe }}</p>
+    {% endif %}
+    {# <br> #}
+    <a href="{{ page.permalink | safe }}" id="continue-reading">Continue reading…</a>
+  </article>
+  {% endfor %}
+</section>
+
 {% endblock content %}

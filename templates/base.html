@@ -8,7 +8,8 @@
   <meta name="description" itemprop="about" content="{{config.description}}">
   <title>{{ config.title }}</title>
   {% include "partials/styles.html" %}
-  {# <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700&display=swap" /> #}
+  {#
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700&display=swap" /> #}
 </head>
 
 <body>
@@ -17,29 +18,39 @@
 
     <aside class="sidebar box">
 
-    {# <header class="box"> #}
-      <a href="{{ config.base_url | safe }}">
-        <h2 class="site-title">{{ config.title }}</h2>
-      </a>
+      {# <header class="box"> #}
+        <a href="{{ config.base_url | safe }}">
+          <h2 class="site-title">{{ config.title }}</h2>
+        </a>
 
-      {% include "partials/sidebar-nav.html" %}
+        {% include "partials/sidebar-nav.html" %}
 
-    {# </header> #}
+        {#
+      </header> #}
 
-    {# <aside class="sidebar box"> #}
+      {% if page %}
+      <h2 class="sidebar-title">{{ page.title }}</h2>
+      <p>{{ page.description }}</p>
+      {% elif section.description %}
+      <h1>{{ section.title }}</h1>
+      {{ section.description | safe }}
+      {% else %}
+      {% if section.title %}
+      <h1>{{ section.title }}</h1>
+      {% endif %}
+      {{ config.description | safe }}
+      {% endif %}
+      {% if page.toc %}
+      {% include "partials/toc.html" %}
+      {% endif %}
 
-      {% include "partials/sidebar-content.html" %}
-
-      {# {% include "partials/sidebar-nav.html" %} #}
-
-      {# <footer class="footer-sidebar box"> #}
-      <footer class="footer-sidebar box">
-        {# <p class="footer-sidebar">Powered by <a href="https://www.getzola.org/">Zola</a> and <a #}
-        <p>Powered by <a href="https://www.getzola.org/">Zola</a> and <a
+      {# <footer class="footer-sidebar box">
+        <p>Powered by
+          <a href="https://www.getzola.org/">Zola</a> and <a
             href="https://github.com/semanticdata/zola-testing">Testing</a>.
           <br>© 2023 Miguel Pimentel
         </p>
-      </footer>
+      </footer> #}
 
     </aside>
 
@@ -48,12 +59,12 @@
       {% endblock content %}
     </main>
 
-    <footer class="footer-main box">
+    {# <footer class="footer-main box">
       <p>Powered by <a href="https://www.getzola.org/">Zola</a> and <a
           href="https://github.com/semanticdata/zola-testing">Testing</a>.
         <br>© 2023 Miguel Pimentel
       </p>
-    </footer>
+    </footer> #}
 
   </section>
 </body>

@@ -1,5 +1,5 @@
 ---
-title: "🦎 Mabuya"
+title: "Mabuya"
 date: 2023-09-20
 description: "Mabuya—a minimal Zola theme focused on helping you build an elegant, fast, lightweight, and SEO-ready blog."
 updated: 2023-11-24

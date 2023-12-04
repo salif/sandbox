@@ -1,6 +1,5 @@
 {% if section.pages %}
 {% for page in section.pages %}
-<hr>
 <article class="post">
   <time itemprop="datePublished" datetime="{{ page.date | safe }}">{{ page.date | date(format="%B %e, %Y") | safe }} •
     {{
@@ -11,7 +10,6 @@
   {% if page.description %}
   <p class="post-description">{{ page.description | safe }}</p>
   {% endif %}
-  {# <br> #}
   <a href="{{ page.permalink | safe }}" id="continue-reading">Continue reading…</a>
 </article>
 {% endfor %}

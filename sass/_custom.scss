@@ -1,20 +1,21 @@
 // Custom CSS goes here
 @use "vars";
 
-// .post-title {
-//   margin-top: 0.2rem;
-// }
+// Title and Sidebar Formatting
+.post {
+  padding-bottom: 1rem;
+}
 
-// .breadcrumb-container {
-//   margin-bottom: 1rem;
-// }
-
-// .main-content {
-//   margin-top: 1rem;
-// }
+.post-title {
+  margin-top: 0.2rem;
+}
 
 .post-description {
-  text-align: justify;
+  padding-bottom: 1.2rem;
+}
+
+.breadcrumb-container {
+  margin-bottom: 1rem;
 }
 
 .site-title {
@@ -22,15 +23,27 @@
 }
 
 .sidebar-title {
-  margin-top: initial;
+  margin-top: 1rem;
 }
 
 .sidebar-nav {
+  margin-top: 0;
+  padding-left: 0;
+  display: inline-flex;
+  gap: 1rem;
   list-style-type: none;
-  padding-left: 1rem;
-  & li {
-    padding-bottom: 0.5rem;
-  }
+}
+
+// Read more, Continure reading (subtitles)
+#read-more {
+  margin-top: calc(1rem + 1px);
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+#continue-reading {
+  margin-top: 1px;
+  margin-bottom: 1rem;
+  display: inline-block;
 }
 
 // Table of Contents
@@ -38,6 +51,7 @@
   list-style-type: circle;
   font-size: vars.$font-size-small;
   margin-bottom: 0;
+  padding-left: 1rem;
   & li {
     padding-bottom: 0.25rem;
   }
@@ -55,8 +69,9 @@
   border-radius: 0.5rem;
   box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.3);
   @include vars.transition(box-shadow 0.5s ease-in-out);
+  background: vars.$background-color-gray;
 }
 
-.box:hover {
-  box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.3);
-}
+// .box:hover {
+//   box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.3);
+// }
