@@ -66,8 +66,6 @@ Please read and be aware of the [Code of Conduct](.github/CODE_OF_CONDUCT.md) be
 
 ## Acknowledgements and Attributions
 
-Testing is a fork of [Tale](https://github.com/aaranxu/tale-zola), which is a port of the Jekyll theme [Tale](https://github.com/chesterhow/tale)—a now Archived repository.
-
 The icons used throughout the site are kindly provided by [UXWing](https://uxwing.com/license/). Read their [license](https://uxwing.com/license/).
 
 Other icons used come from [Remix Icon](https://remixicon.com/). Check out their [license](https://remixicon.com/license).
