@@ -1,11 +1,11 @@
-<h1 align=center>🧪 Zola Testing</h1>
+<h1 align=center>🧪 Zola Sanbox</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/github/languages/code-size/semanticdata/zola-testing" />
-  <img src="https://img.shields.io/github/repo-size/semanticdata/zola-testing" />
-  <img src="https://img.shields.io/github/commit-activity/t/semanticdata/zola-testing" />
-  <img src="https://img.shields.io/github/last-commit/semanticdata/zola-testing" />
-  <img src="https://img.shields.io/website/https/miguelpimentel.do/zola-testing.svg" />
+  <img src="https://img.shields.io/github/languages/code-size/semanticdata/zola-sandbox" />
+  <img src="https://img.shields.io/github/repo-size/semanticdata/zola-sandbox" />
+  <img src="https://img.shields.io/github/commit-activity/t/semanticdata/zola-sandbox" />
+  <img src="https://img.shields.io/github/last-commit/semanticdata/zola-sandbox" />
+  <img src="https://img.shields.io/website/https/miguelpimentel.do/zola-sandbox.svg" />
 </p>
 
 This repository is used to test new web elements. It is an amalgamation of code snippets, all weaved together by Zola.
@@ -22,9 +22,9 @@ Before using the theme, you need to install [Zola](https://www.getzola.org/docum
 
 ```bash
 # clone the repo
-git clone git@github.com:semanticdata/zola-testing.git
+git clone git@github.com:semanticdata/zola-sandbox.git
 # change directory into the cloned folder
-cd zola-testing
+cd zola-sandbox
 # serve the site locally
 zola serve
 # open http://127.0.0.1:1111/ in the browser
@@ -52,11 +52,11 @@ Adding custom CSS is as easy as adding your styles to `sass/_custom.scss`. This 
 
 ## Reporting Issues
 
-We use GitHub Issues as the official bug tracker for **Testing**. Please
-search [existing issues](https://github.com/semanticdata/zola-testing/issues). It’s
+We use GitHub Issues as the official bug tracker for this repository. Please
+search [existing issues](https://github.com/semanticdata/zola-sandbox/issues). It’s
 possible someone has already reported the same problem.
 
-If your problem or idea is not addressed yet, [open a new issue](https://github.com/semanticdata/zola-testing/issues/new).
+If your problem or idea is not addressed yet, [open a new issue](https://github.com/semanticdata/zola-sandbox/issues/new).
 
 ## Contributing
 

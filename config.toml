@@ -1,5 +1,5 @@
-base_url = "https://miguelpimentel.do/zola-testing/"
-title = "Zola Testing"
+base_url = "https://miguelpimentel.do/zola-sandbox/"
+title = "Zola Sandbox"
 description = "This repository is used to test new web elements. It is an amalgamation of code snippets, all weaved together by Zola."
 
 compile_sass = true
@@ -21,8 +21,8 @@ highlight_code = true
 internalLinks = [
   { url = "test", name = "Test" },
   { url = "posts", name = "Posts" },
-  # { url = "posts/markdown-showcase", name = "Showcase" },
   { url = "projects", name = "Projects" },
+  # { url = "posts/markdown-showcase", name = "Showcase" },
   # { url = "projects/discord-in-sidebar", name = "GitHub in Sidebar" },
 ]
 # externalLinks = [
