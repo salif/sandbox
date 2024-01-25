@@ -8,7 +8,29 @@
   <img src="https://img.shields.io/website/https/miguelpimentel.do/zola-sandbox.svg" />
 </p>
 
+## Overview
+
 This repository is used to test new web elements. It is an amalgamation of code snippets, all weaved together by Zola.
+
+## Table of Contents
+
+<details>
+<summary>Show/Hide</summary>
+
+- [Overview](#overview)
+- [Table of Contents](#table-of-contents)
+- [Running the Site Locally](#running-the-site-locally)
+  - [Requirements](#requirements)
+  - [Quick Start](#quick-start)
+  - [Useful Commands](#useful-commands)
+- [Customization](#customization)
+  - [Custom CSS Styles](#custom-css-styles)
+- [Reporting Issues](#reporting-issues)
+- [Contributing](#contributing)
+- [Acknowledgements and Attributions](#acknowledgements-and-attributions)
+- [License](#license)
+
+</details>
 
 ## Running the Site Locally
 
