@@ -1,14 +1,12 @@
-<h1 align=center>🧪 Zola Sanbox</h1>
+# 🧪 Zola Sanbox
 
-<p align="center">
+<p align="">
   <img src="https://img.shields.io/github/languages/code-size/semanticdata/zola-sandbox" />
   <img src="https://img.shields.io/github/repo-size/semanticdata/zola-sandbox" />
   <img src="https://img.shields.io/github/commit-activity/t/semanticdata/zola-sandbox" />
   <img src="https://img.shields.io/github/last-commit/semanticdata/zola-sandbox" />
-  <img src="https://img.shields.io/website/https/miguelpimentel.do/zola-sandbox.svg" />
+  <img src="https://img.shields.io/website/https/semanticdata.github.io/zola-sandbox.svg" />
 </p>
-
-## Overview
 
 This repository is used to test new web elements. It is an amalgamation of code snippets, all weaved together by Zola.
 
