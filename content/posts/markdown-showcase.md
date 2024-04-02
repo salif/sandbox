@@ -41,7 +41,7 @@ Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 ## Links
 
-You can [link](https://example.dom/) to external pages. and other internal [[Markdown|links]].
+You can [link](https://example.com/) to external pages. and other internal [[Markdown|links]].
 
 ## Blockquotes
 

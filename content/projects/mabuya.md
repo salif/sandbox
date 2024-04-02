@@ -13,7 +13,7 @@ Mabuya is a minimal Zola theme focused on helping you build an elegant, fast, li
 
 While searching for themes, I came across [Zola Tale](https://github.com/aaranxu/tale-zola). Sadly, the project's last update was almost 2 years ago on Dec 4, 2021. I forked the project to add my own touches to it.
 
-[Demo](https://miguelpimentel.do/mabuya/) | [Source](https://github.com/semanticdata/mabuya)
+[Demo](https://semanticdata.github.io/mabuya/) | [Source](https://github.com/semanticdata/mabuya)
 
 ## Where The Name Comes From
 

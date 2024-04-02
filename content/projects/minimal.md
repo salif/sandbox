@@ -11,7 +11,7 @@ category: Projects
 
 Minimal is a [Zola](https://www.getzola.org) theme with the goal of helping you build a light, fast, and SEO ready website. It's based on the [Minimal](https://github.com/pages-themes/minimal) theme for [Jekyll](https://jekyllrb.com/).
 
-[Demo](https://miguelpimentel.do/zola-minimal/) | [Source](https://github.com/semanticdata/zola-minimal)
+[Demo](https://semanticdata.github.io/zola-minimal/) | [Source](https://github.com/semanticdata/zola-minimal)
 
 ## Requirements
 
