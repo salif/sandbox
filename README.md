@@ -5,10 +5,12 @@
   <img src="https://img.shields.io/github/repo-size/semanticdata/zola-sandbox" />
   <img src="https://img.shields.io/github/commit-activity/t/semanticdata/zola-sandbox" />
   <img src="https://img.shields.io/github/last-commit/semanticdata/zola-sandbox" />
-  <img src="https://img.shields.io/website/https/semanticdata.github.io/zola-sandbox.svg" />
+  <img src="https://img.shields.io/website/https/zola-sandbox.svg" />
 </p>
 
 This repository is used to test new web elements. It is an amalgamation of code snippets, all weaved together by Zola.
+
+Check out the [demo](https://zola-sandbox.vercel.app/).
 
 ## Table of Contents
 
