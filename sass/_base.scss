@@ -13,12 +13,12 @@
   box-sizing: inherit;
 }
 
-// main,
-// aside,
-// header,
-// footer {
-//   border: solid 1px rebeccapurple;
-// }
+main,
+aside,
+header,
+footer {
+  border: solid 1px rebeccapurple;
+}
 
 html,
 body {
@@ -41,6 +41,8 @@ body {
 .wrapper {
   max-width: vars.$full-page-width;
   margin: 0 auto;
+  // background: palegoldenrod;
+  // min-height: 100vh;
 }
 
 footer,
@@ -49,6 +51,7 @@ aside {
   padding: 1rem;
 }
 
+footer,
 main {
   position: relative;
   max-width: vars.$page-width;
@@ -65,21 +68,6 @@ header {
   max-width: vars.$sidebar-width;
 }
 
-.footer-sidebar {
-  // text-align: center;
-  // position: fixed;
-  bottom: 1rem;
-  position: fixed;
-  font-size: vars.$font-size-small;
-  width: vars.$sidebar-width;
-  text-align: center;
-  display: none;
-}
-
-.footer-main {
-  display: none;
-}
-
 // Small Screens
 @media only screen and (max-width: vars.$mobile-breakpoint) {
   aside {
@@ -87,6 +75,7 @@ header {
     max-width: 100%;
     margin-bottom: 1rem;
   }
+  footer,
   main {
     max-width: 100%;
     position: initial;

@@ -1,0 +1,10 @@
+name = "Sandbox"
+description = "Sandbox is a theme for Zola."
+license = "MIT"
+homepage = "https://github.com/semanticdata/zola-sandbox"
+min_version = "0.18.0"
+demo = "https://semanticdata.github.io/zola-sandbox"
+
+[author]
+name = "Miguel Pimentel"
+homepage = "https://miguelpimentel.do/"

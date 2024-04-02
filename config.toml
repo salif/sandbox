@@ -19,14 +19,9 @@ highlight_code = true
 
 [extra]
 internalLinks = [
-  { url = "test", name = "Test" },
   { url = "posts", name = "Posts" },
   { url = "projects", name = "Projects" },
-  # { url = "posts/markdown-showcase", name = "Showcase" },
-  # { url = "projects/discord-in-sidebar", name = "GitHub in Sidebar" },
 ]
-# externalLinks = [
-#   { url = "https://miguelpimentel.do/", name = "Blog" },
-#   { url = "https://foretfulnotes.com/", name = "Garden" },
-#   { url = "https://github.com/semanticdata/", name = "GitHub" },
-# ]
+externalLinks = [
+  { url = "https://github.com/semanticdata/zola-sandbox", name = "GitHub" },
+]

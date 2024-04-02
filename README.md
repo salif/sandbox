@@ -12,18 +12,12 @@ This repository is used to test new web elements. It is an amalgamation of code 
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Table of Contents](#table-of-contents)
-- [Running the Site Locally](#running-the-site-locally)
-  - [Requirements](#requirements)
-  - [Quick Start](#quick-start)
-  - [Useful Commands](#useful-commands)
-- [Customization](#customization)
-  - [Custom CSS Styles](#custom-css-styles)
-- [Reporting Issues](#reporting-issues)
-- [Contributing](#contributing)
-- [Acknowledgements and Attributions](#acknowledgements-and-attributions)
-- [License](#license)
+- [🧪 Zola Sanbox](#-zola-sanbox)
+  - [Table of Contents](#table-of-contents)
+  - [Running the Site Locally](#running-the-site-locally)
+  - [Customization](#customization)
+  - [Attributions](#attributions)
+  - [License](#license)
 
 ## Running the Site Locally
 

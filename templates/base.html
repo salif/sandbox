@@ -18,15 +18,11 @@
 
     <aside class="sidebar box">
 
-      {# <header class="box"> #}
-        <a href="{{ config.base_url | safe }}">
-          <h2 class="site-title">{{ config.title }}</h2>
-        </a>
+      <a href="{{ config.base_url | safe }}">
+        <h2 class="site-title">{{ config.title }}</h2>
+      </a>
 
-        {% include "partials/sidebar-nav.html" %}
-
-        {#
-      </header> #}
+      {% include "partials/sidebar-nav.html" %}
 
       {% if page %}
       <h2 class="sidebar-title">{{ page.title }}</h2>
@@ -43,15 +39,6 @@
       {% if page.toc %}
       {% include "partials/toc.html" %}
       {% endif %}
-
-      {# <footer class="footer-sidebar box">
-        <p>Powered by
-          <a href="https://www.getzola.org/">Zola</a> and <a
-            href="https://github.com/semanticdata/zola-sandbox">Sandbox</a>.
-          <br>© 2023 Miguel Pimentel
-        </p>
-      </footer> #}
-
     </aside>
 
     <main class="box">
@@ -59,12 +46,9 @@
       {% endblock content %}
     </main>
 
-    {# <footer class="footer-main box">
-      <p>Powered by <a href="https://www.getzola.org/">Zola</a> and <a
-          href="https://github.com/semanticdata/zola-sandbox">Sandbox</a>.
-        <br>© 2023 Miguel Pimentel
-      </p>
-    </footer> #}
+    {# <div class="grow"></div> #}
+
+    {% include "partials/footer.html" %}
 
   </section>
 </body>
