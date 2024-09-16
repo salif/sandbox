@@ -80,13 +80,3 @@ footer p {
   margin: 0;
   text-align: center;
 }
-
-.grow {
-  flex-grow: 1;
-  height: 1rem;
-  border: solid 1px rebeccapurple;
-  position: relative;
-  max-width: vars.$page-width;
-  left: calc(vars.$sidebar-width + 1rem);
-  margin-bottom: 1rem;
-}
