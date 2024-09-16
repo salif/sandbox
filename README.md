@@ -1,4 +1,4 @@
-# 🧪 Zola Sanbox
+# 🧪 Zola Sandbox
 
 <p align="">
   <img src="https://img.shields.io/github/languages/code-size/semanticdata/zola-sandbox" />
@@ -14,7 +14,7 @@ Check out the [demo](https://zola-sandbox.vercel.app/).
 
 ## Table of Contents
 
-- [🧪 Zola Sanbox](#-zola-sanbox)
+- [🧪 Zola Sandbox](#-zola-sandbox)
   - [Table of Contents](#table-of-contents)
   - [Running the Site Locally](#running-the-site-locally)
     - [Requirements](#requirements)
