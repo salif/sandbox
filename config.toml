@@ -3,7 +3,7 @@ title = "Zola Sandbox"
 description = "This repository is used to test new web elements. It is an amalgamation of code snippets, all weaved together by Zola."
 
 compile_sass = true
-generate_feed = false
+# generate_feed = false
 minify_html = false
 build_search_index = false
 

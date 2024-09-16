@@ -17,7 +17,11 @@ Check out the [demo](https://zola-sandbox.vercel.app/).
 - [🧪 Zola Sanbox](#-zola-sanbox)
   - [Table of Contents](#table-of-contents)
   - [Running the Site Locally](#running-the-site-locally)
+    - [Requirements](#requirements)
+    - [Quick Start](#quick-start)
+    - [Useful Commands](#useful-commands)
   - [Customization](#customization)
+    - [Custom CSS Styles](#custom-css-styles)
   - [Attributions](#attributions)
   - [License](#license)
 
@@ -50,11 +54,11 @@ For more detailed instructions, visit the [Documentation](https://www.getzola.or
 
 A short list of commands that will help you develop your own version of the theme.
 
-| Command                    | Description                |
-| -------------------------- | -------------------------- |
-| `zola init <repo-name>`    | Initiate new Zola site     |
-| `zola build`               | Build only                 |
-| `zola serve`               | Build and Serve            |
+| Command                 | Description            |
+| ----------------------- | ---------------------- |
+| `zola init <repo-name>` | Initiate new Zola site |
+| `zola build`            | Build only             |
+| `zola serve`            | Build and Serve        |
 
 ## Customization
 
