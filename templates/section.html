@@ -2,8 +2,6 @@
 
 <!-- Layout for all non-blog sections. -->
 {% block content %}
-{# {% include "partials/page-loop.html" %} #}
-
 {% if section.pages %}
 {% for page in section.pages %}
 <article class="post">
@@ -17,5 +15,4 @@
 </article>
 {% endfor %}
 {% endif %}
-
 {% endblock content %}
