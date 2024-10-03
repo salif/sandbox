@@ -1,0 +1,262 @@
+@charset "utf-8";
+
+// @use "normalize";
+@use "vars";
+// @use "base";
+// @use "custom";
+@use "fonts";
+// @use "sakura-slim";
+// @use "sakura-copy";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    // background: vars.$background-color;
+    font-family: vars.$font-family;
+    max-width: vars.$full-page-width;
+    // max-width: 1300px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    grid-template-areas:
+        "sidebar-left main"
+        "sidebar-right main"
+        ". main"
+        ". footer";
+}
+aside#sidebar-left {
+    grid-area: sidebar-left;
+    width: vars.$sidebar-width;
+    // background: palegoldenrod;
+}
+main {
+    grid-area: main;
+    // max-width: vars.$page-width;
+    // background: palegreen;
+}
+aside#sidebar-right {
+    grid-area: sidebar-right;
+    width: vars.$sidebar-width;
+    // background: paleturquoise;
+}
+footer {
+    grid-area: footer;
+    text-align: center;
+    // background: palevioletred;
+}
+
+main,
+aside {
+    padding: 1rem;
+}
+footer,
+main,
+aside {
+    border: solid 1px;
+    border-radius: 5px;
+    border-bottom-color: #959da5;
+    box-shadow: inset 0px -1px 0px #959da5;
+    background: vars.$background-color;
+}
+
+// @media screen and (min-width: 1001px) and (max-width: 1300px) {
+//     body {
+//         display: grid;
+//         grid-template-columns: auto 1fr;
+//         grid-template-rows: auto 1fr auto;
+//         grid-template-areas:
+//             "sidebar-left main"
+//             "sidebar-right main"
+//             "footer footer";
+//     }
+// }
+// @media screen and (max-width: 1000px) {
+//     body {
+//         display: grid;
+//         grid-template-columns: auto auto;
+//         grid-template-rows: auto 1fr auto;
+//         grid-template-areas:
+//             "sidebar-left sidebar-right"
+//             "main main"
+//             "footer footer";
+//     }
+//     aside#sidebar-left {
+//         grid-area: sidebar-left;
+//         width: unset;
+//     }
+//     aside#sidebar-right {
+//         grid-area: sidebar-right;
+//         width: unset;
+//     }
+// }
+
+// Tables
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    max-width: 100%;
+}
+
+table thead th,
+table tfoot th {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+table th,
+table td {
+    padding: 2px 6px;
+    border: 1px solid gray;
+}
+
+// Site Navigation
+.sidebar-nav {
+    margin-top: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style-type: none;
+}
+
+// Category Lists
+.base-list {
+    list-style-type: circle;
+    & li {
+        padding-bottom: 0.5rem;
+    }
+}
+
+// Table of Contents
+ul.table-of-content {
+    list-style-type: circle;
+    font-size: vars.$font-size-small;
+    margin-bottom: 0;
+    padding-left: 1rem;
+    & li {
+        padding-bottom: 0.25rem;
+    }
+}
+
+details {
+    cursor: pointer;
+    // border-radius: 4px;
+    // padding: 0.5em 0.5em 0;
+    // margin-top: 1rem;
+}
+
+summary {
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    // padding: 0.5em;
+}
+
+details[open] {
+    padding: 0.5em;
+}
+
+details[open] summary {
+    margin-bottom: 0.5em;
+}
+
+// Code
+pre {
+    // padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+}
+
+code {
+    word-break: break-all;
+    border-radius: 3px;
+    padding: 2px 2px;
+    background: rgba(0, 0, 0, 0.05);
+    font-size: vars.$font-size-small;
+    line-height: 1;
+}
+
+kbd {
+    border: 1px solid #c6cbd1;
+    border-bottom-color: #959da5;
+    box-shadow: inset 0 -1px 0 #959da5;
+    border-radius: 3px;
+    display: inline-block;
+    line-height: 10px;
+    padding: 4px;
+    vertical-align: middle;
+}
+
+// Codeblocks - Line Numbers
+pre {
+    padding: 1rem;
+    overflow: auto;
+}
+/* The line numbers already provide some kind of left/right padding */
+pre[data-linenos] {
+    padding: 0;
+    padding: 0.5rem 0;
+}
+pre table td {
+    // padding: 0;
+    border: none;
+}
+/* The line number cells */
+pre table td:nth-of-type(1) {
+    text-align: center;
+    user-select: none;
+}
+pre mark {
+    /* If you want your highlights to take the full width */
+    display: block;
+    /* The default background colour of a mark is bright yellow */
+    background-color: rgba(254, 252, 232, 0.9);
+}
+pre table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+pre code {
+    padding: 0;
+}
+
+// Blog post reading time
+time {
+    font-size: 0.9rem;
+    // margin-top: 0;
+}
+
+// Quotes
+blockquote {
+    border-left: solid 2px lightgray;
+    padding-left: 1rem;
+    margin-left: 1rem;
+}
+
+// Images
+img {
+    display: inline-block;
+    border-radius: 5px;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
+    max-width: 100%;
+    margin: 1rem 0;
+}
+
+article.post {
+    border: 1px solid;
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    border-bottom-color: #959da5;
+    box-shadow: inset 0px -1px 0px #959da5;
+}
+article.post:last-of-type {
+    margin-bottom: 0;
+}

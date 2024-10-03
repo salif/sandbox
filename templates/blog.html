@@ -2,5 +2,21 @@
 
 <!-- Layout for the blog section. -->
 {% block content %}
-{% include "partials/post-loop.html" %}
+{# {% include "partials/post-loop.html" %} #}
+
+{% if section.pages %}
+{% for page in section.pages %}
+<article class="post">
+    <a href="{{ page.permalink }}">
+        <h1 class="post-title">{{ page.title | safe }}</h1>
+    </a>
+    {# <time itemprop="datePublished" datetime="{{ page.date | safe }}">{{ page.date | date(format="%B %e, %Y") | safe }} •
+        {{ page.reading_time }} minutes read</time> #}
+    {% if page.description %}
+    <p class="post-description">{{ page.description | safe }}</p>
+    {% endif %}
+    {# <a href="{{ page.permalink | safe }}" id="continue-reading">Continue reading…</a> #}
+</article>
+{% endfor %}
+{% endif %}
 {% endblock content %}

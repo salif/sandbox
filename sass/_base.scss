@@ -35,6 +35,8 @@ body {
   font-family: vars.$font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  // max-width: vars.$full-page-width;
+  // margin: 0 auto;
 }
 
 // Layout
