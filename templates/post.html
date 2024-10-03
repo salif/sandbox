@@ -3,7 +3,7 @@
 <!-- Layout for blog posts. -->
 {% block content %}
 <article class="post">
-  {% include "partials/breadcrumbs.html" %}
+  {# {% include "partials/breadcrumbs.html" %} #}
   <time itemprop="datePublished" datetime="{{ page.date | safe }}">{{ page.date | date(format="%B %e, %Y") | safe }} •
     {{
     page.reading_time | safe }} minutes</time>

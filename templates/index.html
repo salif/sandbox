@@ -1,6 +1,50 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en-US">
 
-<!-- Layout for the Homepage. -->
-{% block content %}
-{{ section.content | safe }}
-{% endblock content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" itemprop="about" content="{{config.description}}">
+    <title>{{ config.title }}</title>
+    <link rel="stylesheet" href="{{ get_url(path='main-alt.css') | safe }}">
+    <!-- <link rel="stylesheet" href="{{ get_url(path='main.css') | safe }}"> -->
+</head>
+
+<body>
+    <aside id="sidebar-left" class="box sidebar sidebar-left">
+        <a href="{{ config.base_url | safe }}">
+            <h1 class="site-title">{{ config.title }}</h1>
+        </a>
+        {% include "partials/sidebar-nav.html" %}
+    </aside>
+
+    <main class="box">
+        {% if section %}
+        {# {% include "partials/breadcrumbs.html" %} #}
+        {% if section.title %}
+        <h2>{{ section.title }}</h2>
+        {% endif %}
+        {% if section.description %}
+        <p>{{ section.description | safe }}</p>
+        {% endif %}
+        {% endif %}
+
+        {% block content %}
+        {{ section.content | safe }}
+        {% endblock content %}
+    </main>
+
+    {% if page %}
+    <aside id="sidebar-right" class="box sidebar sidebar-right">
+        {# <h2 class="sidebar-title">{{ page.title }}</h2> #}
+        <p>{{ page.description }}</p>
+        {% if page.toc %}
+        {% include "partials/toc.html" %}
+        {% endif %}
+    </aside>
+    {% endif %}
+
+    {% include "partials/footer.html" %}
+</body>
+
+</html>

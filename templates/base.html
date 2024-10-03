@@ -3,50 +3,52 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" itemprop="about" content="{{config.description}}">
   <title>{{ config.title }}</title>
-  <link rel="stylesheet" href="{{ get_url(path='main.css') | safe }}">
+  <link rel="stylesheet" href="{{ get_url(path='main-alt.css') | safe }}">
+  <!-- <link rel="stylesheet" href="{{ get_url(path='main.css') | safe }}"> -->
 </head>
 
 <body>
+  <aside id="sidebar-left" class="box sidebar sidebar-left">
+    <a href="{{ config.base_url | safe }}">
+      <h1 class="site-title">{{ config.title }}</h1>
+    </a>
+    {% include "partials/sidebar-nav.html" %}
+  </aside>
 
-  <section class="wrapper">
+  <main class="box">
+    {% if section %}
+    {% include "partials/breadcrumbs.html" %}
+    {% if section.title %}
+    <h2>{{ section.title }}</h2>
+    {% endif %}
+    {% if section.description %}
+    <p>{{ section.description | safe }}</p>
+    {% endif %}
+    {% endif %}
 
-    <aside class="sidebar box">
+    {% if page %}
+    {% include "partials/breadcrumbs.html" %}
+    <h2>{{ page.title }}</h2>
+    {% endif %}
 
-      <a href="{{ config.base_url | safe }}">
-        <h2 class="site-title">{{ config.title }}</h2>
-      </a>
+    {% block content %}
+    {% endblock content %}
+  </main>
 
-      {% include "partials/sidebar-nav.html" %}
+  {% if page %}
+  <aside id="sidebar-right" class="box sidebar sidebar-right">
+    {# <h2 class="sidebar-title">{{ page.title }}</h2> #}
+    <p>{{ page.description }}</p>
+    {% if page.toc %}
+    {% include "partials/toc.html" %}
+    {% endif %}
+  </aside>
+  {% endif %}
 
-      {% if page %}
-      <h2 class="sidebar-title">{{ page.title }}</h2>
-      <p>{{ page.description }}</p>
-      {% elif section.description %}
-      <h1>{{ section.title }}</h1>
-      {{ section.description | safe }}
-      {% else %}
-      {% if section.title %}
-      <h1>{{ section.title }}</h1>
-      {% endif %}
-      {{ config.description | safe }}
-      {% endif %}
-      {% if page.toc %}
-      {% include "partials/toc.html" %}
-      {% endif %}
-    </aside>
-
-    <main class="box">
-      {% block content %}
-      {% endblock content %}
-    </main>
-
-    {% include "partials/footer.html" %}
-
-  </section>
+  {% include "partials/footer.html" %}
 </body>
 
 </html>
