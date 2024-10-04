@@ -7,15 +7,28 @@
     <meta name="description" itemprop="about" content="{{config.description}}">
     <title>{{ config.title }}</title>
     <link rel="stylesheet" href="{{ get_url(path='main.css') | safe }}">
+    <style>
+        body {
+            max-width: 700px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr auto;
+            row-gap: 1rem;
+            grid-template-areas:
+                "header"
+                "main"
+                "footer";
+        }
+    </style>
 </head>
 
 <body>
-    <aside id="sidebar-left" class="box sidebar sidebar-left">
-        <a href="{{ config.base_url | safe }}">
+    <header>
+        <a class="site-title-link" href="{{ config.base_url | safe }}">
             <h1 class="site-title">{{ config.title }}</h1>
         </a>
-        {% include "partials/sidebar-nav.html" %}
-    </aside>
+        {% include "partials/site-nav.html" %}
+    </header>
 
     <main class="box">
         {% if section %}
@@ -32,16 +45,6 @@
         {{ section.content | safe }}
         {% endblock content %}
     </main>
-
-    {% if page %}
-    <aside id="sidebar-right" class="box sidebar sidebar-right">
-        {# <h2 class="sidebar-title">{{ page.title }}</h2> #}
-        <p>{{ page.description }}</p>
-        {% if page.toc %}
-        {% include "partials/toc.html" %}
-        {% endif %}
-    </aside>
-    {% endif %}
 
     {% include "partials/footer.html" %}
 </body>

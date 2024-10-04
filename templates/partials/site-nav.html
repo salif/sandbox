@@ -1,0 +1,9 @@
+<nav>
+  <ul class="site-nav">
+    {% for link in config.extra.internalLinks -%}
+    <li>
+      <a href="{{ get_url(path=link.url )}}/" aria-label="{{ link.name }}">{{ link.name }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

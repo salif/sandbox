@@ -21,7 +21,7 @@
     {% if section %}
     {% include "partials/breadcrumbs.html" %}
     {% if section.title %}
-    <h2>{{ section.title }}</h2>
+    <h2 class="section-title">{{ section.title }}</h2>
     {% endif %}
     {% if section.description %}
     <p>{{ section.description | safe }}</p>
@@ -30,7 +30,7 @@
 
     {% if page %}
     {% include "partials/breadcrumbs.html" %}
-    <h2>{{ page.title }}</h2>
+    <h2 class="page-title">{{ page.title }}</h2>
     {% endif %}
 
     {% block content %}

@@ -27,4 +27,25 @@
     {% endfor %}
   </ul>
 </details>
+
+<script>
+  function toggleDetailsBasedOnWidth() {
+    const details = document.querySelectorAll('details');
+    if (window.innerWidth < 1000) {
+      details.forEach(detail => {
+        detail.removeAttribute('open');  // Close details when width is less than 1000px
+      });
+    } else {
+      details.forEach(detail => {
+        detail.setAttribute('open', 'open');  // Open details when width is greater than 1000px
+      });
+    }
+  }
+
+  // Trigger the function when the window is resized
+  window.addEventListener('resize', toggleDetailsBasedOnWidth);
+
+  // Trigger the function on initial page load
+  document.addEventListener('DOMContentLoaded', toggleDetailsBasedOnWidth);
+</script>
 {% endif %}
