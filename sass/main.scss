@@ -34,6 +34,10 @@ main {
 aside#sidebar-right {
     grid-area: sidebar-right;
     width: vars.$sidebar-width;
+    
+    position: sticky;
+    top: 1rem; /* The distance from the top of the viewport */
+    align-self: start; /* Ensures sticky works properly in a grid context */
 }
 footer {
     grid-area: footer;
