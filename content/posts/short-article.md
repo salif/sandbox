@@ -1,6 +1,6 @@
 ---
 title: Short Article
-description: "This is a short description."
+description: "Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit."
 date: 2017-07-24
 taxonomies:
   tags: ["placeholder", "markdown", "reference"]

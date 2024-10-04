@@ -19,6 +19,7 @@ highlight_code = true
 
 [extra]
 internalLinks = [
+  { url = "about", name = "About" },
   { url = "posts", name = "Posts" },
   { url = "projects", name = "Projects" },
 ]
