@@ -11,7 +11,7 @@
 
 <body>
   <aside id="sidebar-left" class="box sidebar sidebar-left">
-    <a href="{{ config.base_url | safe }}">
+    <a class="site-title-link" href="{{ config.base_url | safe }}">
       <h1 class="site-title">{{ config.title }}</h1>
     </a>
     {% include "partials/sidebar-nav.html" %}
@@ -39,8 +39,9 @@
 
   {% if page %}
   <aside id="sidebar-right" class="box sidebar sidebar-right">
-    {# <h2 class="sidebar-title">{{ page.title }}</h2> #}
+    <h2>{{ page.title }}</h2>
     <p>{{ page.description }}</p>
+
     {% if page.toc %}
     {% include "partials/toc.html" %}
     {% endif %}
