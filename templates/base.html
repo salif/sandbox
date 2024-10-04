@@ -49,25 +49,7 @@
 
   {% include "partials/footer.html" %}
 
-  <button id="goToTopBtn" onclick="goToTop()" title="Go to top">↑</button>
-  {# <button id="goToTopBtn" onclick="goToTop()" title="Go to top">↑ Top</button> #}
-  <script>
-    // Show the button when the user scrolls down 20px from the top
-    window.onscroll = function () {
-      var goToTopBtn = document.getElementById("goToTopBtn");
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        goToTopBtn.style.display = "block";
-      } else {
-        goToTopBtn.style.display = "none";
-      }
-    };
-
-    // Scroll smoothly to the top when the button is clicked
-    function goToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  </script>
-
+  {% include "partials/go-top.html" %}
 </body>
 
 </html>
