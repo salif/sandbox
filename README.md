@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/github/repo-size/semanticdata/zola-sandbox" />
   <img src="https://img.shields.io/github/commit-activity/t/semanticdata/zola-sandbox" />
   <img src="https://img.shields.io/github/last-commit/semanticdata/zola-sandbox" />
-  <img src="https://img.shields.io/website/https/zola-sandbox.svg" />
+  <img src="https://img.shields.io/website/https/zola-sandbox.vercel.app.svg" />
 </p>
 
 This repository is used to test new web elements. It is an amalgamation of code snippets, all weaved together by Zola.
@@ -16,6 +16,7 @@ Check out the [demo](https://zola-sandbox.vercel.app/).
 
 - [🧪 Zola Sandbox](#-zola-sandbox)
   - [Table of Contents](#table-of-contents)
+  - [✨ Features](#-features)
   - [Running the Site Locally](#running-the-site-locally)
     - [Requirements](#requirements)
     - [Quick Start](#quick-start)
@@ -24,6 +25,12 @@ Check out the [demo](https://zola-sandbox.vercel.app/).
     - [Custom CSS Styles](#custom-css-styles)
   - [Attributions](#attributions)
   - [License](#license)
+
+## ✨ Features
+
+- ✅ Blog section.
+- ✅ Projects section.
+- ✅ 'Back to Top' button.
 
 ## Running the Site Locally
 
