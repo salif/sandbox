@@ -1,16 +1,16 @@
 # 🧪 Zola Sandbox
 
 <p align="">
-  <img src="https://img.shields.io/github/languages/code-size/semanticdata/zola-sandbox" />
-  <img src="https://img.shields.io/github/repo-size/semanticdata/zola-sandbox" />
-  <img src="https://img.shields.io/github/commit-activity/t/semanticdata/zola-sandbox" />
-  <img src="https://img.shields.io/github/last-commit/semanticdata/zola-sandbox" />
+  <img src="https://img.shields.io/github/languages/code-size/salif/sandbox" />
+  <img src="https://img.shields.io/github/repo-size/salif/sandbox" />
+  <img src="https://img.shields.io/github/commit-activity/t/salif/sandbox" />
+  <img src="https://img.shields.io/github/last-commit/salif/sandbox" />
   <img src="https://img.shields.io/website/https/zola-sandbox.vercel.app.svg" />
 </p>
 
 This repository is used to test new web elements. It is an amalgamation of code snippets, all weaved together by Zola.
 
-Check out the [demo](https://zola-sandbox.vercel.app/).
+Check out the [demo](https://salif.github.io/zola-themes-collection/demo/sandbox/).
 
 ## Table of Contents
 
@@ -44,10 +44,10 @@ Before using the theme, you need to install [Zola](https://www.getzola.org/docum
 
 ```sh
 # Clone the repo
-git clone git@github.com:semanticdata/zola-sandbox.git
+git clone git@github.com:salif/sandbox.git
 
 # Change directory into the cloned folder
-cd zola-sandbox
+cd sandbox
 
 # Serve the site locally
 zola serve

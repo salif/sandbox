@@ -1,4 +1,4 @@
-base_url = "https://zola-sandbox.vercel.app/"
+base_url = "https://salif.github.io/zola-themes-collection/demo/sandbox/"
 title = "Zola Sandbox"
 description = "This repository is used to test new web elements. It is an amalgamation of code snippets, all weaved together by Zola."
 
@@ -24,5 +24,5 @@ internalLinks = [
   { url = "projects", name = "Projects" },
 ]
 externalLinks = [
-  { url = "https://github.com/semanticdata/zola-sandbox", name = "GitHub" },
+  { url = "https://github.com/salif/sandbox", name = "GitHub" },
 ]
